@@ -1,0 +1,939 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 1920px;
+	height: 7952px;
+}
+
+@font-face {
+  font-family: 'Xolonium';
+  src: url('/home/mihail/Internet_technologies/Website DJ PLESH/xolonium/Xolonium-Regular.otf') format('opentype');
+}
+
+/*фигуры верх*/
+.ShapesUp {
+
+	position: absolute;
+	width: 1884.34px;
+	height: 731.11px;
+	left: 9.66px;
+	top: -260.72px;
+	z-index: -4;
+}
+
+.ShapesUp.Ellipse1 {
+
+	position: absolute;
+	width: 458.54px;
+	height: 860.25px;
+	left: 9.66px;
+	top: -45.5px;
+
+	background: #E47610;
+	filter: blur(65px);
+	transform: rotate(-78deg);
+	border-radius: 50%;
+	z-index: -4;
+	transition: width 2s, height 2s, background 2s, transform 2s;
+}
+
+.ShapesUp.Ellipse3 {
+
+	position: absolute;
+	width: 953px;
+	height: 620px;
+	left: 1045px;
+	top: -39.99px;
+
+	background: #AC00E9;
+	filter: blur(65px);
+	border-radius: 50%;
+	z-index: -4;
+
+}
+
+.ShapesUp.Ellipse4 {
+
+	position: absolute;
+	width: 865.87px;
+	height: 556.13px;
+	left: 397px;
+	top: 16.7px;
+
+	background: #979A17;
+	filter: blur(65px);
+	transform: rotate(-47.5deg);
+	border-radius: 50%;
+	z-index: -4;
+}
+
+/*Верхний блок*/
+.UP { 
+	position: absolute;
+	width: 1271px;
+	height: 120px;
+	left: 623px;
+	top: 25px;
+	z-index: 1;
+}
+
+/*название сайта*/
+.DJPLESH { 
+  font-family: 'Xolonium';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: 0.1em;
+  color: #030000;
+  z-index: 1;
+}
+
+/*кнопка зарег.*/
+.ZAR { 
+
+	position: absolute;
+	width: 329px;
+	height: 40px;
+	left: 1565px;
+	top: 25px;
+	z-index: 1;
+	transition: background-color 0.3s ease;
+}
+
+.ZAR:hover{ /*hover кнопка зарег.*/
+	
+	background-color: white;
+}
+
+.ZAR.zareg { /*текст зарег.*/
+
+	position: absolute;
+	left: 72%;
+	right: 0%;
+	top:0%;
+	bottom: 0%;
+
+	font-family: 'Xolonium';
+	font-size: 16px;
+	line-height: 36px;
+	text-align: center;
+	letter-spacing: 0.1em;
+
+	color: #000000;
+	z-index: 1;
+}
+
+.ZAR.Rectangle21 { /*рамка для зарег.*/
+
+	box-sizing: border-box;
+	position: absolute;
+	left: 72%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+
+	border: 1px solid #000000;
+	z-index: 1;
+}
+/*кнопка зарег.*/
+
+/*кнопка войти*/
+.LOG { 
+	position: absolute;
+	width: 142px;
+	height: 40px;
+	left: 1438px;
+	top: 25px;
+	z-index: 1;
+	transition: background-color 0.3s ease;
+}
+
+.LOG:hover { /*эффект hover для войти*/
+
+	background-color: white;
+}
+
+.LOG.login { /*текст "Войти" */
+
+	position: absolute;
+	left: 60%;
+	right: 0%;
+	top: 0%;
+
+	font-family: 'Xolonium';
+	font-size: 16px;
+	line-height: 36px;
+	text-align: center;
+	letter-spacing: 0.1em;
+
+	color: #000000;
+	z-index: 1;
+
+}
+
+.LOG.Rectangle22 { /*рамка для войти*/
+
+	box-sizing: border-box;
+	position: absolute;
+	left: 60%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+	cursor: pointer;
+
+	border: 1px solid #000000;
+	z-index: 1;
+}
+/*кнопка войти*/
+
+/* информация по сайту */
+.InformationAbWeS {
+
+	position: absolute;
+	width: 1639px;
+	height: 670px;
+	left: 178px;
+	top: 315px;
+	z-index: 1;
+}
+
+/* DJ PLESH ? */
+.inf1 {
+position: absolute;
+width: 1639px;
+height: 525px;
+left: -24px;
+top: 237px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 43px;
+
+color: #FFFFFF;
+z-index: 1;
+
+}
+
+/* ИНФОРМАЦИЯ ПО САЙТУ */
+.inf2 {
+position: absolute;
+width: 738px;
+height: 116px;
+left: 418px;
+top: 83px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+z-index: 1;
+
+}
+
+/* Line 1 */
+.line1 {
+position: absolute;
+width: 1920px;
+height: 0px;
+left: 0px;
+top: 1097px;
+
+border: 3px solid #000000;
+transform: rotate(-0.12deg);
+
+}
+
+.TOUR {
+position: absolute;
+width: 1920px;
+height: 669px;
+left: 0px;
+top: 1093px;
+} /* тур */
+
+/* даты */
+.dates {
+position: absolute;
+width: 1370px;
+height: 394px;
+left: 275px;
+top: 1368px;
+
+}
+
+.DateOne {
+	top: 300px;
+	font-family: 'Xolonium';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	text-align: center;
+	color: #FFFFFF;
+
+}
+
+.DateTwo {
+	top: 500px;
+	font-family: 'Xolonium';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.DateThree {
+	top: 700px;
+	font-family: 'Xolonium';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/* 1.05.23 */
+.D1 {
+position: absolute;
+width: 181px;
+height: 41px;
+left: 313px;
+
+}
+
+/* 4.05.23 */
+.D2 {
+position: absolute;
+width: 180px;
+height: 41px;
+left: 869px;
+
+}
+
+/* 8.05.23 */
+.D3 {
+position: absolute;
+width: 180px;
+height: 41px;
+left: 1449px;
+
+}
+
+/* 25.05.23 */
+.D4 {
+position: absolute;
+width: 218px;
+height: 41px;
+left: 1427px;
+
+}
+
+/* 20.05.23 */
+.D5 {
+position: absolute;
+width: 217px;
+height: 41px;
+left: 869px;
+
+}
+
+/* 14.05.23 */
+.D6 {
+position: absolute;
+width: 210px;
+height: 41px;
+left: 285px;
+
+}
+
+/* 5.06.23 */
+.D7 {
+position: absolute;
+width: 181px;
+height: 41px;
+left: 887px;
+
+}
+
+/* 10.05.23 */
+.D8 {
+position: absolute;
+width: 209px;
+height: 41px;
+left: 1434px;
+
+}
+
+/* 29.05.23 */
+.D9 {
+position: absolute;
+width: 219px;
+height: 41px;
+left: 275px;
+
+}
+
+/* города */
+.cityes {
+position: absolute;
+width: 1680px;
+height: 411px;
+left: 132px;
+top: 34px;
+
+}
+
+.CityOne {
+top: 238px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 43px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+.CityTwo {
+	top: 438px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 43px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+.CityThree {
+		top: 638px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 43px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+/* БЕЛАЯ ХОЛУНИЦА */
+.BelayaHolynica {
+position: absolute;
+width: 509px;
+height: 63px;
+left: 172px;
+
+}
+
+/* САРАТОВ */
+.Saratov {
+position: absolute;
+width: 303px;
+height: 63px;
+left: 811px;
+
+}
+
+/* ВЕЛИКИЙ УСТЮГ */
+.Velikii {
+position: absolute;
+width: 487px;
+height: 63px;
+left: 1295px;
+
+}
+
+/* ЧЕЛЯБИНСК */
+.chelaba {
+position: absolute;
+width: 361px;
+height: 63px;
+left: 795px;
+
+}
+
+/* НИЖНИЙ ТАГИЛ */
+.NizhTag {
+position: absolute;
+width: 452px;
+height: 46px;
+left: 170px;
+
+}
+
+/* ЧЕРЕПОВЕЦ */
+.Cherepovec {
+position: absolute;
+width: 343px;
+height: 46px;
+left: 806px;
+
+}
+
+/* ЖЕЛЕЗНОДОРОЖНЫЙ */
+.Zelezno {
+position: absolute;
+width: 622px;
+height: 63px;
+left: 1228px;
+
+}
+
+/* НИЖНИЕ СЕРГИ */
+.NizhSergi {
+position: absolute;
+width: 462px;
+height: 46px;
+left: 1301px;
+
+}
+
+/* ЭЛЕКТРОСТАЛЬ */
+.Electro {
+position: absolute;
+width: 439px;
+height: 63px;
+left: 170px;
+
+}
+
+/* ТУР ПО РОССИИ */
+.TourinRuss {
+position: absolute;
+width: 624px;
+height: 96px;
+left: 660px;
+top: 65px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.line2 {
+position: absolute;
+width: 1919px;
+height: 0px;
+left: 1px;
+top: 1920px;
+
+border: 3px solid #000000;
+transform: rotate(-0.06deg);
+
+}
+
+/* Свежие новости */
+.News {
+position: absolute;
+width: 1919px;
+height: 1083px;
+top: 1918px;
+
+}
+
+/* Чемпионат мира по диджеингу IDA WORLD 2023 в этом году претерпел заметные изменения. В частности, появилась новая категория, а именно Party Rocking Battle (или по другому "Зажигательная вечеринка"). Также в новом сезоне изменился официальный партнер чемпионата, им стала компания Pioneer DJ, которая и предоставляет призы победителям и призерам… */
+.worldСhamp {
+position: absolute;
+width: 1587px;
+height: 276px;
+left: 155px;
+top: 850px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+
+color: #FFFCFC;
+
+}
+
+/* DJ CHIB ONE Окт 23, 2023 */
+.DJCHIB {
+position: absolute;
+width: 423px;
+height: 38px;
+left: 122px;
+top: 830px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+/* Определился чемпион мира по диджеингу (IDA WORLD) в категории Party Rocking Battle. */
+.IDAWORLD {
+position: absolute;
+width: 1506px;
+height: 29px;
+left: 155px;
+top: 800px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+/* Rectangle 28 */
+.Rectangle28 {
+position: absolute;
+width: 1611px;
+height: 577px;
+left: 157px;
+top: 200px;
+background: url('imiges/news.jpg');
+z-index: 1;
+}
+
+/* СВЕЖИЕ НОВОСТИ */
+.lastNews {
+position: absolute;
+width: 887px;
+height: 68px;
+left: 534px;
+top: 70px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.line3 {
+position: absolute;
+width: 1919px;
+height: 0px;
+left: 1px;
+top: 3098px;
+
+border: 3px solid #000000;
+transform: rotate(-0.12deg);
+
+}
+
+/* Cвежая музыка */
+.lastMusic {
+position: absolute;
+width: 1510px;
+height: 1408px;
+left: 199px;
+top: 3129px;
+
+}
+
+/* Описание треков */
+.trackDescriptions {
+position: absolute;
+width: 1510px;
+height: 759px;
+left: 199px;
+top: 3778px;
+
+}
+
+.constDescriptions {
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 34px;
+left: 20px;
+
+color: #FFFFFF;
+}
+
+/* One More Time - иконический электронный хит, который отражает эссенцию французского хауса. Сочетание захватывающего ритма, мелодичных синтезаторов и заразительного вокала создает уникальное музыкальное путешествие. Этот трек олицетворяет дух ночных вечеринок и пронизан чувством веселья и беззаботности. One More Time безупречно демонстрирует мастерство Daft Punk в создании уникальных и запоминающихся музыкальных композиций. */
+.OneMoreTime {
+position: absolute;
+width: 1504px;
+height: 284px;
+top: 703px;
+
+}
+
+/* Lean On - захватывающий хит, созданный в соавторстве с DJ Snake. Сочетание восточных мелодий с современным электронным звучанием делает этот трек веселым и энергичным. Вокал MØ придает композиции свежий и волнующий характер, создавая непринужденную и динамичную атмосферу. "Lean On" с успехом объединяет различные музыкальные элементы, делая его одним из самых незабываемых треков электронной музыки. */
+.LeanOn {
+position: absolute;
+width: 1506px;
+height: 238px;
+top: 1120px;
+
+}
+
+/* Titanium - электронный хит, который отражает силу и несгибаемость. Вокал Сии переплетается с энергичным звучанием, создавая вдохновляющую атмосферу уверенности и непоколебимости. Этот трек превосходно передает эмоциональную глубину и стойкость, делая его неотъемлемой частью современной музыкальной культуры. */
+.Titanium {
+position: absolute;
+width: 1510px;
+height: 197px;
+top: 928px;
+
+}
+
+/* Назван треков */
+.nameTrack {
+position: absolute;
+width: 1339px;
+height: 40px;
+top: 10px;
+
+}
+
+.constNameTrack {
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.1em;
+top: 550px;
+
+color: #FFFFFF;
+}
+
+/* LEAN ON */
+.LEANON {
+position: absolute;
+width: 177px;
+height: 39px;
+left: 1265px;
+
+}
+
+/* TITANIUM */
+.TITANIUM {
+position: absolute;
+width: 196px;
+height: 34px;
+left: 90px;
+
+}
+
+/* ONE MORE TIME */
+.ONEMORETIME {
+position: absolute;
+width: 331px;
+height: 32px;
+left: 615px;
+
+}
+
+
+/* Артисты */
+.artists {
+position: absolute;
+width: 1503px;
+height: 224px;
+left: 2px;
+
+}
+
+.constArtists {
+top: 595px;
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+
+/* DJ SNAKE */
+.DJSNAKE {
+position: absolute;
+width: 176px;
+height: 19px;
+left: 1265px;
+
+}
+
+/* DAFT PUNK */
+.DAFTPUNK {
+position: absolute;
+width: 169px;
+height: 20px;
+left: 695px;
+
+}
+
+/* DAVID GUETTA */
+.DAVIDGUETTA {
+position: absolute;
+width: 179px;
+height: 21px;
+left: 100px;
+
+}
+
+/* обложки */
+.covers {
+position: absolute;
+width: 1503px;
+height: 350px;
+top: 200px;
+
+}
+
+.constCover {
+position: absolute;
+width: 350px;
+height: 350px;
+
+
+}
+
+/* Rectangle 29 */
+.Rectangle29 {
+left: 15px;
+
+
+background: url('imiges/David Guetta.jpg');
+
+}
+
+/* Rectangle 30 */
+.Rectangle30 {
+left: 600px;
+
+background: url('imiges/Daft ounk.jpg');
+
+}
+
+/* Rectangle 31 */
+.Rectangle31 {
+left: 1170px;
+
+background: url('imiges/dj snake.jpg');
+
+}
+
+/* СВЕЖАЯ МУЗЫКА */
+.lastM {
+position: absolute;
+width: 721px;
+height: 68px;
+left: 420px;
+top: 60px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+/* Line 6 */
+.line4 {
+position: absolute;
+width: 1919px;
+height: 0px;
+left: 0px;
+top: 4601px;
+
+border: 3px solid #000000;
+transform: rotate(-0.09deg);
+
+}
+
+
+.Rectangle11 {
+
+	position: absolute;
+	width: 1920px;
+	height: 7952px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(19, 19, 19, 0.1);
+	backdrop-filter: blur(2px);
+	z-index: -2;
+}
+
+.Rectangle2 {
+
+	position: absolute;
+	width: 4091px;
+	height: 7956px;
+	left: -2171px;
+	top: -1px;
+
+	background-color: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(50px);
+	z-index: -3;
+}
+
+.background { 
+
+	position: relative;
+	height: 100%;
+	width: 1920px;
+	background-image: url("/home/mihail/Internet_technologies/Website DJ PLESH/imiges/background.jpg");
+  	background-repeat: no-repeat; 
+  	background-size: cover; 
+  	background-position: center;
+  	background-attachment: scroll;
+  	z-index: -5;
+}
