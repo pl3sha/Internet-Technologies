@@ -1,0 +1,14 @@
+th {
+	background-color: lightgrey;
+}
+
+table {
+    font-family: "Courier New", Arial, sans-serif;
+    border-collapse: collapse;
+}
+
+tdright {
+	text-align: right;
+}
+
+
