@@ -6,7 +6,7 @@
 
 body {
 	width: 1920px;
-	height: 7952px;
+	height: 8000px;
 }
 
 @font-face {
@@ -18,9 +18,9 @@ body {
 .ShapesUp {
 
 	position: absolute;
-	width: 1884.34px;
+	width: 1920px;
 	height: 731.11px;
-	left: 9.66px;
+	left: 0px;
 	top: -260.72px;
 	z-index: -4;
 }
@@ -29,30 +29,31 @@ body {
 
 	position: absolute;
 	width: 458.54px;
-	height: 860.25px;
-	left: 9.66px;
+	height: 841px;
+	left: 134.7px;
 	top: -45.5px;
 
 	background: #E47610;
-	filter: blur(65px);
+	filter: blur(65px) saturate(200%);
 	transform: rotate(-78deg);
 	border-radius: 50%;
-	z-index: -4;
+	z-index: -1;
 	transition: width 2s, height 2s, background 2s, transform 2s;
 }
 
 .ShapesUp.Ellipse3 {
 
 	position: absolute;
-	width: 953px;
-	height: 620px;
-	left: 1045px;
+	width: 1079px;
+  	height: 621px;
+  	left: 841px;
 	top: -39.99px;
 
 	background: #AC00E9;
-	filter: blur(65px);
+	filter: blur(65px) saturate(150%);
 	border-radius: 50%;
-	z-index: -4;
+	z-index: -3;
+	transition: width 2s, height 2s, background 2s, transform 2s;
 
 }
 
@@ -61,14 +62,28 @@ body {
 	position: absolute;
 	width: 865.87px;
 	height: 556.13px;
-	left: 397px;
+	left: 555px;
 	top: 16.7px;
 
 	background: #979A17;
-	filter: blur(65px);
+	filter: blur(65px) saturate(200%);
 	transform: rotate(-47.5deg);
 	border-radius: 50%;
-	z-index: -4;
+	z-index: -2;
+	transition: width 2s, height 2s, background 2s, transform 2s;
+}
+
+@keyframes colorShift {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.ShapesUp.Ellipse1, .ShapesUp.Ellipse3, .ShapesUp.Ellipse4 {
+    animation: colorShift 10s infinite;
 }
 
 /*Верхний блок*/
@@ -81,7 +96,6 @@ body {
 	z-index: 1;
 }
 
-/*название сайта*/
 .DJPLESH { 
   font-family: 'Xolonium';
   font-style: normal;
@@ -93,7 +107,6 @@ body {
   z-index: 1;
 }
 
-/*кнопка зарег.*/
 .ZAR { 
 
 	position: absolute;
@@ -105,12 +118,11 @@ body {
 	transition: background-color 0.3s ease;
 }
 
-.ZAR:hover{ /*hover кнопка зарег.*/
-	
+.ZAR:hover{
 	background-color: white;
 }
 
-.ZAR.zareg { /*текст зарег.*/
+.ZAR.zareg {
 
 	position: absolute;
 	left: 72%;
@@ -140,9 +152,7 @@ body {
 	border: 1px solid #000000;
 	z-index: 1;
 }
-/*кнопка зарег.*/
 
-/*кнопка войти*/
 .LOG { 
 	position: absolute;
 	width: 142px;
@@ -153,7 +163,7 @@ body {
 	transition: background-color 0.3s ease;
 }
 
-.LOG:hover { /*эффект hover для войти*/
+.LOG:hover {
 
 	background-color: white;
 }
@@ -176,7 +186,7 @@ body {
 
 }
 
-.LOG.Rectangle22 { /*рамка для войти*/
+.LOG.Rectangle22 {
 
 	box-sizing: border-box;
 	position: absolute;
@@ -189,7 +199,6 @@ body {
 	border: 1px solid #000000;
 	z-index: 1;
 }
-/*кнопка войти*/
 
 /* информация по сайту */
 .InformationAbWeS {
@@ -541,7 +550,7 @@ color: #FFFFFF;
 
 }
 
-.line2 {
+.line_2 {
 position: absolute;
 width: 1919px;
 height: 0px;
@@ -654,7 +663,7 @@ color: #FFFFFF;
 
 }
 
-.line3 {
+.line_3 {
 position: absolute;
 width: 1919px;
 height: 0px;
@@ -773,7 +782,6 @@ left: 615px;
 
 }
 
-
 /* Артисты */
 .artists {
 position: absolute;
@@ -795,7 +803,6 @@ letter-spacing: 0.1em;
 
 color: #FFFFFF;
 }
-
 
 /* DJ SNAKE */
 .DJSNAKE {
@@ -838,15 +845,13 @@ position: absolute;
 width: 350px;
 height: 350px;
 
-
 }
 
 /* Rectangle 29 */
 .Rectangle29 {
 left: 15px;
-
-
 background: url('imiges/David Guetta.jpg');
+background-size: cover;
 
 }
 
@@ -855,6 +860,7 @@ background: url('imiges/David Guetta.jpg');
 left: 600px;
 
 background: url('imiges/Daft ounk.jpg');
+background-size: cover;
 
 }
 
@@ -863,6 +869,7 @@ background: url('imiges/Daft ounk.jpg');
 left: 1170px;
 
 background: url('imiges/dj snake.jpg');
+background-size: cover;
 
 }
 
@@ -886,8 +893,7 @@ color: #FFFFFF;
 
 }
 
-/* Line 6 */
-.line4 {
+.line_4 {
 position: absolute;
 width: 1919px;
 height: 0px;
@@ -899,15 +905,987 @@ transform: rotate(-0.09deg);
 
 }
 
+.Const_Rectangle_123 {
+box-sizing: border-box;
+
+position: absolute;
+width: 549px;
+height: 656px;
+left: 0px;
+background: linear-gradient(180deg, #FFFFFF 62.5%, rgba(0, 0, 0, 0) 100%);
+border: 5px solid #000000;
+
+}
+
+.Const_Name {
+position: absolute;
+width: 400px;
+height: 44px;
+left: 50%;
+transform: translateX(-50%);
+top: 20px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.1em;
+
+z-index: 2;
+
+color: #000000;
+
+}
+
+.Const_Rectangle_Must_Dietils {
+box-sizing: border-box;
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 81%;
+bottom: 9%;
+
+border: 3px solid #FFFFFF;
+transition: background-color 0.3s ease;
+
+}
+
+.Const_Rectangle_Must_Dietils:hover {
+	background-color: black;
+}
+
+.Сonst_Moredetails {
+position: absolute;
+left: 11%;
+top: 25%;
+
+font-family: 'Xolonium';
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+/* курсы */
+.Courses {
+position: absolute;
+width: 1753px;
+height: 838px;
+left: 74px;
+top: 4607px;
+
+}
+
+.Const_Text_Well {
+position: absolute;
+width: 481px;
+height: 72px;
+left: 40px;
+top: 320px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.1em;
+
+color: #000000;
+
+}
+
+.Const_Text_Practice_Well {
+position: absolute;
+width: 436px;
+height: 24px;
+left: 40px;
+top: 400px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.1em;
+
+color: #000000;
+
+}
+
+.well {
+position: absolute;
+width: 295px;
+height: 61px;
+left: 725px;
+top: 50px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.boxBasic {
+position: absolute;
+width: 551px;
+height: 657px;
+left: 0px;
+top: 210px;
+}
+
+.Rectangle39 {
+position: absolute;
+width: 253px;
+height: 250px;
+left: 143px;
+top: 55px;
+background: url('imiges/lbce.png');
+background-size: cover;
+
+}
+
+.pro {
+position: absolute;
+width: 551px;
+height: 657px;
+left: 604px;
+top: 210px;
+
+}
+
+.Rectangle40 {
+position: absolute;
+width: 227px;
+height: 226px;
+left: 154px;
+top: 66px;
+background: url('imiges/Без имени.png');
+
+}
+
+.Pro_Xl {
+position: absolute;
+width: 551px;
+height: 657px;
+left: 1210px;
+top: 210px;
+
+}
+
+.Rectangle41 {
+position: absolute;
+width: 227px;
+height: 226px;
+left: 158px;
+top: 67px;
+background: url('imiges/Без имени 1.png');
+
+}
+
+.line_5 {
+position: absolute;
+width: 1920px;
+height: 0px;
+left: 0px;
+top: 5588px;
+
+border: 3px solid #000000;
+transform: rotate(-0.06deg);
+
+}
+
+.Figures_Courses {
+position: absolute;
+width: 1851px;
+height: 920px;
+left: -47px;
+top: 61px;
+ z-index: -4;
+}
+
+.Ellipse5 {
+position: absolute;
+width: 742px;
+height: 649px;
+left: -45px;
+top: 152px;
+
+background: rgba(197, 176, 255, 0.6);
+filter: blur(65px) saturate(200%);
+transform: rotate(90deg);
+
+}
+
+.Ellipse6 {
+position: absolute;
+width: 920px;
+height: 789px;
+left: 464px;
+top: 18px;
+background: rgba(197, 176, 255, 0.6);
+filter: blur(65px) saturate(200%);
+transform: rotate(90deg);
+
+}
+
+.Ellipse7 {
+position: absolute;
+width: 742px;
+height: 649px;
+left: 1155px;
+top: 150px;
+
+background: rgba(197, 176, 255, 0.6);
+filter: blur(65px) saturate(200%);;
+transform: rotate(90deg);
+
+}
+
+/* Оборудование */
+.equipment {
+    position: absolute;
+    width: 1753px;
+    height: 836px;
+    left: 74px;
+    top: 5649px;
+}
+
+.EQUIPMENT1 {
+    position: absolute;
+    width: 613px;
+    height: 90px;
+    left: 595px;
+    top: 10px;
+    font-family: 'Xolonium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.Controllers {
+    position: absolute;
+    width: 551px;
+    height: 657px;
+    left: 0px;
+    top: 147px;
+}
+
+.equipment1_jpg {
+position: absolute;
+width: 378px;
+height: 293px;
+left: 91px;
+top: 48px;
+
+background: url('imiges/оборудование1.jpg');
+background-size: cover;
+}
+
+.Sound_Сards {
+position: absolute;
+width: 549px;
+height: 656px;
+left: 604px;
+top: 147px;
+
+}
+
+.equipment2_jpg {
+position: absolute;
+width: 327px;
+height: 274px;
+left: 101px;
+top: 110px;
+
+background: url('imiges/оборудование2.jpg');
+background-size: cover ;
+
+}
+
+.mixers {
+position: absolute;
+width: 551px;
+height: 657px;
+left: 1210px;
+top: 147px;
+
+}
+
+.Mixers_jpg {
+position: absolute;
+width: 355px;
+height: 209px;
+left: 101px;
+top: 121px;
+
+background: url('imiges/оборудование3.jpg');
+background-size: cover;
+}
+
+.line_6 {
+position: absolute;
+width: 1920px;
+height: 0px;
+left: 0px;
+top: 6627px;
+
+border: 3px solid #000000;
+transform: rotate(-0.12deg);
+
+}
+
+/* фигуры оборудование */
+.figures_Equipment {
+position: absolute;
+width: 1851px;
+height: 894px;
+left: -43px;
+top: 21px;
+z-index: -4;
+}
+
+.Ellipse8 {
+position: absolute;
+width: 742px;
+height: 649px;
+left: 1149px;
+top: 129px;
+
+background: rgba(255, 176, 252, 0.6);
+filter: blur(65px) saturate(200%);;
+transform: rotate(90deg);
+
+}
+
+.Ellipse9 {
+position: absolute;
+width: 894px;
+height: 883px;
+left: 462px;
+top: -18px;
+
+background: rgba(255, 176, 252, 0.6);
+filter: blur(65px) saturate(200%);;
+transform: rotate(0deg);
+
+}
+
+.Ellipse10 {
+position: absolute;
+width: 742px;
+height: 649px;
+left: -48px;
+top: 131px;
+
+background: rgba(255, 176, 252, 0.6);
+filter: blur(65px) saturate(200%);;
+transform: rotate(90deg);
+
+}
+
+/* мерч */
+.Merch {
+position: absolute;
+width: 1753px;
+height: 880px;
+left: 74px;
+top: 6661px;
+
+}
+
+.Merch_h {
+position: absolute;
+width: 195px;
+height: 46px;
+left: 780px;
+top: 60px;
+
+text-align: center;
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.hoodie {
+position: absolute;
+width: 551px;
+height: 657px;
+left: 0px;
+top: 223px;
+
+}
+
+.Hoodi_jpg {
+position: absolute;
+width: 258px;
+height: 328px;
+left: 143px;
+top: 62px;
+
+background: url('imiges/27666.970.jpg');
+background-size: cover ;
+}
+
+.T-shirts {
+position: absolute;
+width: 551px;
+height: 657px;
+left: 604px;
+top: 223px;
+
+}
+
+.T-shirts_jpg {
+position: absolute;
+width: 380px;
+height: 395px;
+left: 85px;
+top: 6px;
+
+background: url('imiges/майка.png');
+background-size: cover;
+z-index: 1;
+}
+
+.accessories {
+position: absolute;
+width: 551px;
+height: 657px;
+left: 1210px;
+top: 223px;
+
+}
+
+.accessories_jpg {
+position: absolute;
+width: 374px;
+height: 300px;
+left: 53px;
+top: 73px;
+
+background: url('imiges/42f6443a56e826982a362915e47dc5f3.jpeg');
+background-size: cover;
+}
+
+.Figures_Merch {
+position: absolute;
+width: 1851px;
+height: 835px;
+left: -43px;
+top: 61px;
+z-index: -4;
+}
+
+.Ellipse11 {
+position: absolute;
+width: 742px;
+height: 649px;
+left: 1149px;
+top: 166px;
+
+background: rgba(255, 242, 176, 0.6);
+filter: blur(65px) saturate(200%);;
+transform: rotate(90deg);
+
+}
+
+.Ellipse12 {
+position: absolute;
+width: 835px;
+height: 998px;
+left: 507px;
+top: -82px;
+background: rgba(255, 242, 176, 0.6);
+filter: blur(65px) saturate(200%);;
+transform: rotate(90deg);
+
+}
+
+.Ellipse13 {
+position: absolute;
+width: 742px;
+height: 649px;
+left: -48px;
+top: 164px;
+
+background: rgba(255, 242, 176, 0.6);
+filter: blur(65px) saturate(200%);;
+transform: rotate(90deg);
+
+}
+
+.bottom {
+position: absolute;
+width: 1920px;
+height: 300px;
+left: 0px;
+top: 7699px;
+
+}
+
+.Rectangle_bottom {
+position: absolute;
+width: 1920px;
+height: 370px;
+left: 0px;
+background-color: black;
+z-index: -4;
+}
+
+.DJ_PLESH {
+position: absolute;
+width: 236.16px;
+height: 28px;
+left: calc(50% - 236.16px/2 - 810px);
+top: 105px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.DJ_PLESH_2 {
+position: absolute;
+width: 236.16px;
+height: 28px;
+left: calc(50% - 236.16px/2 - 810px);
+top: 150px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.DJ_PLESH_3 {
+position: absolute;
+width: 236.16px;
+height: 28px;
+left: calc(50% - 236.16px/2 - 810px);
+top: 195px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.DJ_PLESH_4 {
+position: absolute;
+width: 236.16px;
+height: 28px;
+left: calc(50% - 236.16px/2 - 810px);
+top: 240px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.DJ_PLESH_5 {
+position: absolute;
+width: 236.16px;
+height: 28px;
+left: calc(50% - 236.16px/2 - 810px);
+top: 285px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.Const_Rectangle_bottom {
+box-sizing: border-box;
+
+position: absolute;
+width: 346.77px;
+height: 221px;
+
+border: 1px solid #FFFFFF;
+}
+
+.Const_Name_Bottom {
+position: absolute;
+width: 311px;
+height: 29px;
+left: 50%;
+transform: translateX(-50%);
+top: 12.5px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.Const_Line_Bottom {
+position: absolute;
+width: 346.77px;
+height: 0px;
+left: 0px;
+top: 25%;
+
+border: 1px solid #FFFFFF;
+
+}
+
+/* Поддержка */
+.support {
+position: absolute;
+width: 347.76px;
+height: 221px;
+left: 298.82px;
+top: 100px;
+
+}
+
+.Help_Center {
+position: absolute;
+width: 227.19px;
+height: 28px;
+left: 18%;
+top: 77px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.FAQ {
+position: absolute;
+width: 288.97px;
+height: 53px;
+left: 8%;
+top: 162px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.Complain {
+position: absolute;
+width: 172.39px;
+height: 26px;
+left: 25%;
+top: 118px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+/* Партнер */
+.partner {
+position: absolute;
+width: 347.76px;
+height: 221px;
+left: 1275px;
+top: 100px;
+
+}
+
+.Partnership {
+position: absolute;
+width: 168.4px;
+height: 23px;
+left: 26%;
+top: 77px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.Bonuses_from_partners {
+
+position: absolute;
+width: 258px;
+height: 30px;
+left: 13%;
+top: 118px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.Guest_post {
+position: absolute;
+width: 243.14px;
+height: 26px;
+left: 15%;
+top: 162px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+/* Информация о нас */
+.Information_about_us {
+position: absolute;
+width: 409.54px;
+height: 221px;
+left: 755px;
+top: 100px;
+
+}
+
+.Rectangle25 {
+box-sizing: border-box;
+
+position: absolute;
+width: 409.54px;
+height: 221px;
+left: 0px;
+top: 0px;
+border: 1px solid #FFFFFF;
+
+}
+
+.line_2_Information {
+position: absolute;
+width: 409.54px;
+height: 0px;
+left: 0px;
+top: 25%;
+
+border: 1px solid #FFFFFF;
+
+}
+
+.Street {
+position: absolute;
+width: 319.86px;
+height: 52px;
+left: 47.1px;
+top: 72px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.number {
+position: absolute;
+width: 261.07px;
+height: 36px;
+left: 73.0px;
+top: 131px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+.pl3shkov {
+position: absolute;
+width: 340.79px;
+height: 29px;
+left: 34px;
+top: 174px;
+
+font-family: 'Xolonium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+
+}
+
+/* Иконки приложений */
+.Application_icons {
+position: absolute;
+width: 158px;
+height: 139px;
+left: 1694px;
+top: 140px;
+
+}
+
+.Icon_Inst {
+position: absolute;
+left: 5%;
+right: 50%;
+top: 5px;
+bottom: 0%;
+
+background: url('imiges/instagram.png');
+background-size: cover ;
+width: 66px;
+height: 66px;
+
+}
+
+.Icone_Tel {
+position: absolute;
+left: 50%;
+right: 0%;
+top: 50%;
+bottom: 0%;
+
+background: url('imiges/telegram.png');
+background-size: cover;
+width: 66px;
+height: 66px;
+}
+
+.Icon_YT {
+position: absolute;
+left: 50%;
+right: 0%;
+top: 0%;
+bottom: 50%;
+
+background: url('imiges/youtube.png');
+background-size: cover;
+
+}
+
+.Icon_VK {
+position: absolute;
+left: 5%;
+right: 50%;
+top: 55%;
+bottom: 0%;
+
+background: url('imiges/vkontakte.png');
+background-size: cover;
+width: 66px;
+height: 66px;
+}
 
 .Rectangle11 {
 
 	position: absolute;
 	width: 1920px;
-	height: 7952px;
+	height: 8000px;
 	left: 0px;
 	top: 0px;
-	background-color: rgba(19, 19, 19, 0.1);
+	background-color: rgba(19, 19, 19, 0.2);
 	backdrop-filter: blur(2px);
 	z-index: -2;
 }
@@ -916,7 +1894,7 @@ transform: rotate(-0.09deg);
 
 	position: absolute;
 	width: 4091px;
-	height: 7956px;
+	height: 8000px;
 	left: -2171px;
 	top: -1px;
 
@@ -934,6 +1912,6 @@ transform: rotate(-0.09deg);
   	background-repeat: no-repeat; 
   	background-size: cover; 
   	background-position: center;
-  	background-attachment: scroll;
+  	background-attachment: fixed;
   	z-index: -5;
 }
