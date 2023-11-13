@@ -6,12 +6,17 @@
 
 body {
 	width: 1920px;
-	height: 8000px;
+	height: 8070px;
 }
 
 @font-face {
   font-family: 'Xolonium';
   src: url('/home/mihail/Internet_technologies/Website DJ PLESH/xolonium/Xolonium-Regular.otf') format('opentype');
+}
+
+.hidden {
+opacity: 0;
+transition: opacity 2s;
 }
 
 /*фигуры верх*/
@@ -566,8 +571,8 @@ transform: rotate(-0.06deg);
 .News {
 position: absolute;
 width: 1919px;
-height: 1083px;
-top: 1918px;
+height: 1127px;
+top: 1930px;
 
 }
 
@@ -1440,7 +1445,7 @@ transform: rotate(90deg);
 .bottom {
 position: absolute;
 width: 1920px;
-height: 300px;
+height: 370px;
 left: 0px;
 top: 7699px;
 
@@ -1449,7 +1454,7 @@ top: 7699px;
 .Rectangle_bottom {
 position: absolute;
 width: 1920px;
-height: 370px;
+height: 372px;
 left: 0px;
 background-color: black;
 z-index: -4;
@@ -1882,7 +1887,7 @@ height: 66px;
 
 	position: absolute;
 	width: 1920px;
-	height: 8000px;
+	height: 8070px;
 	left: 0px;
 	top: 0px;
 	background-color: rgba(19, 19, 19, 0.2);
@@ -1894,7 +1899,7 @@ height: 66px;
 
 	position: absolute;
 	width: 4091px;
-	height: 8000px;
+	height: 8070px;
 	left: -2171px;
 	top: -1px;
 
