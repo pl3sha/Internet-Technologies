@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="adaptive.css">
     <meta charset="utf-8" />
     <title>DJ PLESH</title>
            <style>
@@ -17,66 +18,80 @@
             <div class="Rectangle11"></div>
 
                 <div class="ShapesUp">
-                    <div class="ShapesUp Ellipse4"></div>
-                    <div class="ShapesUp Ellipse1"></div>
-                    <div class="ShapesUp Ellipse3"></div>
+                    <div class="Ellipse4"></div>
+                    <div class="Ellipse1"></div>
+                    <div class="Ellipse3"></div>
                 </div>
 
-                <div class="UP">
-                    
+                <div class="UP">    
                     <div class="hidden">
-                        <div class="DJPLESH">DJ PLESH</div>
-
-                        <div class="ZAR Rectangle21"></div>
-                        <div class="ZAR zareg">ЗАРЕГЕСТРИРОВАТЬСЯ</div>
+                        <div class="Rectangle0"><p class="DJPLESH">DJ PLESH</p></div>
+                        <div class="Rectangle21">
+                            <div class="zareg">ЗАРЕГЕСТРИРОВАТЬСЯ</div>
+                        </div>
                         
-                        <div class="LOG Rectangle22"></div>
-                        <div class="LOG login">ВОЙТИ</div>
+                        <div class="Rectangle22">
+                            <div class="login">ВОЙТИ</div>
+                        </div>
                     </div> 
                 </div>
 
                 <div class="InformationAbWeS">
-                        <div class="hidden">
-                            <div class="inf2">ИНФОРМАЦИЯ ПО САЙТУ</div>
-                            <div class="inf1">DJ PLESH ? Успешный музыкальный продюсер, а так же диджей.<br>
-                                        На этом сайте вы найдете свежие новости из мира Диджеинга, а так же<br>
-                                        свежие музыкальные новинки, к созданию которых приложили свою руку<br>
-                                        диджеи.
-                                        Так же вы сможете приобрести курсы для начинающего диджея, от моих
-                                        товарищей с которыми я работаю рука об руку уже<br>
-                                        20 лет. А если вы уже,
-                                        что то знаете или прошли курсы, вы можете приобрести необходимое оборудование
-                                        для начала своей карьеры в мире диджеинга.<br>
-                                        Отзовы, поддержка, партнервство, наш мерч, социальные сети и<br>
-                                        информацию вы вожете найти в конце сайта.<br>
-                                        САМОЕ ГЛАВНОЕ: ТУР. Вы можете найти иформацию по туру и купить билеты.
-                            </div>
-                        </div>
-                </div>
+    <div id="infoBlock" class="hidden">
+      <div class="inf2">ИНФОРМАЦИЯ ПО САЙТУ</div>
+      <div id="infoText" class="inf1">DJ PLESH ? Успешный музыкальный продюсер, а так же диджей.<br>
+        На этом сайте вы найдете свежие новости из мира Диджеинга, а так же<br>
+        свежие музыкальные новинки, к созданию которых приложили свою руку<br>
+        диджеи.
+        Так же вы сможете приобрести курсы для начинающего диджея, от моих
+        товарищей с которыми я работаю рука об руку уже<br>
+        20 лет. А если вы уже,
+        что-то знаете или прошли курсы, вы можете приобрести необходимое оборудование
+        для начала своей карьеры в мире диджеинга.<br>
+        Отзовы, поддержка, партнервство, наш мерч, социальные сети и<br>
+        информацию вы вожете найти в конце сайта.<br>
+        САМОЕ ГЛАВНОЕ: ТУР. Вы можете найти информацию по туру и купить билеты.
+      </div>
+    </div>
+  </div>
+  <button onclick="restoreText()" class="bottom11"><-</button>
+  <button onclick="changeText()" class="bottom12">-></button>
 
                 <div class="line1"></div>
 
                 <div class="TOUR">
                     <div class="hidden">
                         <div class="TourinRuss">ТУР ПО РОССИИ</div>
-                        <div class="CityOne BelayaHolynica">БЕЛАЯ ХОЛУНИЦА</div>
-                        <div class="CityOne Saratov">САРАТОВ</div>
-                        <div class="CityOne Velikii">ВЕЛИКИЙ УСТЮГ</div>
-                        <div class="CityTwo NizhTag">НИЖНИЙ ТАГИЛ</div>
-                        <div class="CityTwo Cherepovec">ЧЕРЕПОВЕЦ</div>
-                        <div class="CityTwo NizhSergi">НИЖНИЕ СЕРГИ</div>
-                        <div class="CityThree Zelezno">ЖЕЛЕЗНОДОРОЖНЫЙ</div>
-                        <div class="CityThree chelaba">ЧЕЛЯБИНСК</div>
-                        <div class="CityThree Electro">ЭЛЕКТРОСТАЛЬ</div>
-                        <div class="DateOne D1">1.05.23</div>
-                        <div class="DateOne D2">4.05.23</div>
-                        <div class="DateOne D3">8.05.23</div>
-                        <div class="DateTwo D4">25.05.23</div>
-                        <div class="DateTwo D5">20.05.23</div>
-                        <div class="DateTwo D6">14.05.23</div>
-                        <div class="DateThree D7">5.06.23</div>
-                        <div class="DateThree D8">10.06.23</div>
-                        <div class="DateThree D9">29.05.23</div>
+                        <div class="CityOne"> 
+                            <div class ="BelayaHolynica">БЕЛАЯ ХОЛУНИЦА</div>
+                            <div class="Saratov">САРАТОВ</div>
+                            <div class="Velikii">ВЕЛИКИЙ УСТЮГ</div>
+                        </div>
+                        <div class="DateOne">
+                            <div class="D1">1.05.23</div>
+                            <div class="D2">4.05.23</div>
+                            <div class="D3">8.05.23</div>
+                        </div>
+                        <div class="CityTwo">
+                            <div class="NizhTag">НИЖНИЙ ТАГИЛ</div>
+                            <div class="Cherepovec">ЧЕРЕПОВЕЦ</div>
+                            <div class="NizhSergi">НИЖНИЕ СЕРГИ</div>
+                        </div>
+                        <div class="DateTwo"> 
+                            <div class="D4">25.05.23</div>
+                            <div class="D5">20.05.23</div>
+                            <div class="D6">14.05.23</div>
+                        </div>
+                        <div class="CityThree">
+                            <div class="Zelezno">ЖЕЛЕЗНОДОРОЖНЫЙ</div>
+                            <div class="chelaba">ЧЕЛЯБИНСК</div>
+                            <div class="Electro">ЭЛЕКТРОСТАЛЬ</div>
+                        </div>
+                        <div class="DateThree">
+                            <div class="D7">5.06.23</div>
+                            <div class="D8">10.06.23</div>
+                            <div class="D9">29.05.23</div>
+                        </div>
                     </div>
                 </div>
                
@@ -85,10 +100,12 @@
                 <div class="News">
                     <div class="hidden"> 
                         <div class="lastNews">СВЕЖИЕ НОВОСТИ</div>
-                        <div class="Rectangle28"></div>
-                        <div class="IDAWORLD">Определился чемпион мира по диджеингу (IDA WORLD) в категории Party Rocking Battle.</div>
-                        <div class="DJCHIB">DJ CHIB ONE Окт 23, 2023</div>
-                        <div class="worldСhamp">Чемпионат мира по диджеингу IDA WORLD 2023 в этом году претерпел заметные изменения. В частности, появилась новая категория, а именно Party Rocking Battle (или по другому "Зажигательная вечеринка"). Также в новом сезоне изменился официальный партнер чемпионата, им стала компания Pioneer DJ, которая и предоставляет призы победителям и призерам...</div>
+                            <div class="Rectangle28"></div>
+                            <div class="Rectangle-1">
+                            <div class="IDAWORLD">Определился чемпион мира по диджеингу (IDA WORLD) в категории Party Rocking Battle.</div>
+                            <div class="DJCHIB">DJ CHIB ONE Окт 23, 2023</div>
+                            <div class="worldСhamp">Чемпионат мира по диджеингу IDA WORLD 2023 в этом году претерпел заметные изменения. В частности, появилась новая категория, а именно Party Rocking Battle (или по другому "Зажигательная вечеринка"). Также в новом сезоне изменился официальный партнер чемпионата, им стала компания Pioneer DJ, которая и предоставляет призы победителям и призерам...</div>
+                        </div>
                     </div>
                 </div>
 
@@ -98,66 +115,66 @@
                     <div class="hidden">
                         <div class="lastM">СВЕЖАЯ МУЗЫКА</div>
                         <div class="covers">
-                            <div class="constCover Rectangle29"></div>
-                            <div class="constCover Rectangle30"></div>
-                            <div class="constCover Rectangle31"></div>
+                            <div class="Rectangle29"></div>
+                            <div class="Rectangle30"></div>
+                            <div class="Rectangle31"></div>
                         </div>
                         <div class="nameTrack">
-                            <div class="constNameTrack LEANON">LEAN ON</div>
-                            <div class="constNameTrack TITANIUM">TITANIUM</div>
-                            <div class="constNameTrack ONEMORETIME">ONE MORE TIME</div>
+                            <div class="LEANON">LEAN ON</div>
+                            <div class="TITANIUM">TITANIUM</div>
+                            <div class="ONEMORETIME">ONE MORE TIME</div>
                         </div>
                         <div class="artists">
-                            <div class="constArtists DJSNAKE">DJ SNAKE</div>
-                            <div class="constArtists DAFTPUNK">DAFT PUNK</div>
-                            <div class="constArtists DAVIDGUETTA">DAVID GUETTA</div>
+                            <div class="DJSNAKE">DJ SNAKE</div>
+                            <div class="DAFTPUNK">DAFT PUNK</div>
+                            <div class="DAVIDGUETTA">DAVID GUETTA</div>
                         </div>
-                        <div class="trackDescriptions"></div>
-                            <div class="constDescriptions OneMoreTime">
+                        <div class="trackDescriptions">
+                            <div class="DescriptionsSongs">
                                 One More Time - иконический электронный хит, который отражает эссенцию французского хауса.
                                 Сочетание захватывающего ритма, мелодичных синтезаторов и заразительного вокала создает уникальное музыкальное путешествие.
                                 Этот трек олицетворяет дух ночных вечеринок и пронизан чувством веселья и беззаботности.
                                 One More Time безупречно демонстрирует мастерство Daft Punk в создании уникальных и запоминающихся музыкальных композиций.
-                            </div>
-                            <div class="constDescriptions LeanOn">
+                                <br>
+                                <br>
+                                <br>
                                 Lean On - захватывающий хит, созданный в соавторстве с DJ Snake.
                                 Сочетание восточных мелодий с современным электронным звучанием делает этот трек веселым и энергичным.
                                 Вокал MØ придает композиции свежий и волнующий характер, создавая непринужденную и динамичную атмосферу.
-                                "Lean On" с успехом объединяет различные музыкальные элементы, делая его одним из самых незабываемых треков электронной музыки.
-                            </div>
-                            <div class="constDescriptions Titanium">
+                                "Lean On" с успехом объединяет различные музыкальные элементы, делая его одним из самых незабываемых треков электронной музыки.<br>
+                                <br>
+                                <br>
                                 Titanium - электронный хит, который отражает силу и несгибаемость.
                                 Вокал Сии переплетается с энергичным звучанием, создавая вдохновляющую атмосферу уверенности и непоколебимости.
                                 Этот трек превосходно передает эмоциональную глубину и стойкость, делая его неотъемлемой частью современной музыкальной культуры.
                             </div>
+                        </div>
                     </div>
                 </div>
-
                 <div class="line_4"></div>
 
                 <div class="Courses">
                     <div class="hidden">
                         <div class="well">КУРСЫ</div>
                         <div class="boxBasic">
-                            <div class="Const_Rectangle_123"></div>
+                            <div class="Const_Rectangle_123">
+                            </div>
                             <div class="Const_Name">BASIC EXPRESS</div>
                             <div class="Const_Text_Well">Курс для тех, кто хочет быстро и 
-                                экономно научиться основам диджеинга.</div>
-                            <div class="Const_Text_Practice_Well">5 занятий, 20 часов практикки</div>
+                                экономно научиться основам диджеинга.<br><br>
+                            5 занятий, 20 часов<br> практикки</div>
                             <a href="https://tramplin.pro/kursy_i_ceny/dj_kurs_express" target="_blank">
                                 <div class="Const_Rectangle_Must_Dietils">
                                 <div class="Сonst_Moredetails">ПОДРОБНЕЕ</div>
                                 </div>
                             </a>
-                            <div class="Rectangle39"></div>    
+                                <div class="Rectangle39"></div>
                         </div>
 
                     <div class="pro">
                         <div class="Const_Rectangle_123"></div>
                         <div class="Const_Name">DJ BASIC PRO</div>
-                        <div class="Const_Text_Well">Самый популярный курс ! Полное
-                        погружение в современный диджеинг</div>
-                         <div class="Const_Text_Practice_Well">10 занятий, 3 месяца практикки 3 выступления</div>
+                        <div class="Const_Text_Well">Самый популярный курс ! Полное погружение в современный диджеинг<br><br>10 занятий, 3 месяца практики<br>3 выступления</div>
                         <a href="https://tramplin.pro/kursy_i_ceny/dj_kurs_standard/" target="_blank"><div class="Const_Rectangle_Must_Dietils">
                             <div class="Сonst_Moredetails">ПОДРОБНЕЕ</div>
                         </div></a>
@@ -167,20 +184,13 @@
                     <div class="Pro_Xl">
                         <div class="Const_Rectangle_123"></div>
                         <div class="Const_Name">DJ PRO XL</div>
-                        <div class="Const_Text_Well">Курс для тех, кто настроен максимально серьёзно</div>
-                        <div class="Const_Text_Practice_Well">6 месяцев занятий и практики, 5 выступлений</div>
+                        <div class="Const_Text_Well">Курс для тех, кто настроен максимально серьёзно<br><br>6 месяцев занятий и практики,<br>5 выступлений</div>
                         <a href="https://tramplin.pro/kursy_i_ceny/dj_kurs_xxl/" target="_blank"><div class="Const_Rectangle_Must_Dietils">
                             <div class="Сonst_Moredetails">ПОДРОБНЕЕ</div>
                         </div></a>
                         <div class="Rectangle41"></div>
                     </div>
                     </div>
-                    <div class="Figures_Courses">
-                        <div class="Ellipse5"></div>
-                        <div class="Ellipse6"></div>
-                        <div class="Ellipse7"></div>
-                    </div>
-                    
                 </div>
 
                 <div class="line_5"></div>
@@ -212,11 +222,6 @@
                                 <div class="Сonst_Moredetails">ПОДРОБНЕЕ</div>
                             </div></a>
                         </div>
-                        </div>
-                        <div class="figures_Equipment">
-                            <div class="Ellipse8"></div>
-                            <div class="Ellipse9"></div>
-                            <div class="Ellipse10"></div>
                         </div>
                 </div>
 
@@ -250,45 +255,48 @@
                             </div></a>
                         </div>
                         </div>
-                        <div class="Figures_Merch">
-                            <div class="Ellipse11"></div>
-                            <div class="Ellipse12"></div>
-                            <div class="Ellipse13"></div>
-                        </div>
-                        
-                    </div>
+                </div>
 
                     <div class="bottom">
                         <div class="Rectangle_bottom"></div>
                         <div class="hidden">
-                        <div class="DJ_PLESH">DJ PLESH</div>
-                        <div class="DJ_PLESH_2">DJ PLESH</div>
-                        <div class="DJ_PLESH_3">DJ PLESH</div>
-                        <div class="DJ_PLESH_4">DJ PLESH</div>
-                        <div class="DJ_PLESH_5">DJ PLESH</div>
-                        <div class="support">
-                            <div class="Const_Rectangle_bottom"></div>
-                            <div class="Const_Name_Bottom">ПОДДЕРЖКА</div>
-                            <div class="Const_Line_Bottom"></div>
-                            <div class="Help_Center">Справочный центр</div>
-                            <div class="Complain">Пожаловаться</div>
-                            <div class="FAQ">Часто задаваемые вопросы</div>
-                        </div>
+                            <div class="DJ_PLESH">DJ PLESH<br>
+                                            DJ PLESH<br>
+                                            DJ PLESH<br>
+                                            DJ PLESH<br>
+                                            DJ PLESH<br>
+                                            DJ PLESH<br>
+                                            DJ PLESH<br>
+                                            DJ PLESH<br>
+                            </div>
+                            <div class="support">
+                                <div class="Const_Rectangle_bottom"></div>
+                                <div class="Const_Name_Bottom">ПОДДЕРЖКА</div>
+                                <div class="Const_Line_Bottom"></div>
+                                <div class="Text_support">Справочный центр<br>
+                                    <br>
+                                Пожаловаться<br>
+                                <br>
+                                Часто задаваемые вопросы<br>
+                                </div>
+                            </div>
                         <div class="partner">
                             <div class="Const_Rectangle_bottom"></div>
                             <div class="Const_Name_Bottom">ПАРТНЕР</div>
                             <div class="Const_Line_Bottom"></div>
-                            <div class="Partnership">Партнерство</div>
-                            <div class="Bonuses_from_partners">Бонусы от партнеров</div>
-                            <div class="Guest_post">Гостевой пост</div>
+                            <div class="Text_partner">Партнерство<br><br>
+                                Бонусы от партнеров<br><br>
+                                Гостевой пост
+                            </div>
                         </div>
                         <div class="Information_about_us">
                             <div class="Rectangle25"></div>
                             <div class="Const_Name_Bottom">ИНФОРМАЦИЯ О НАС</div>
                             <div class="line_2_Information"></div>
-                            <div class="Street">Ул. Бориса Богаткова 67 кв. 120 </div>
-                            <div class="number">+7-913-136-83-22</div>
-                            <div class="pl3shkov">pl3shkov.m@yande.ru</div>
+                            <div class="Text_Information">Ул. Бориса Богаткова 67 кв. 120<br><br>
+                                +7-913-136-83-22<br><br>
+                                pl3shkov.m@yande.ru
+                            </div>
                         </div>
                         <div class="Application_icons">
                             <a href="https://instagram.com/ple5ha?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><div class="Icon_Inst"></div></a>

@@ -5,13 +5,55 @@
 }
 
 body {
-	width: 1920px;
-	height: 8070px;
+	width: 100%;
+	height: 100vh;
 }
 
 @font-face {
   font-family: 'Xolonium';
   src: url('/home/mihail/Internet_technologies/Website DJ PLESH/xolonium/Xolonium-Regular.otf') format('opentype');
+}
+
+.background { 
+
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: url("/home/mihail/Internet_technologies/Website DJ PLESH/images/background.jpg");
+  	background-repeat: no-repeat; 
+  	background-size: cover; 
+  	background-position: center;
+  	background-attachment: fixed;
+  	z-index: -5;
+}
+
+.Rectangle2 {
+
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(50px);
+	background-repeat: no-repeat; 
+  	background-size: cover; 
+  	background-position: center;
+  	background-attachment: fixed;
+	z-index: -3;
+
+}
+
+.Rectangle11 {
+
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(19, 19, 19, 0.2);
+	backdrop-filter: blur(2px);
+	background-repeat: no-repeat; 
+  	background-size: cover; 
+  	background-position: center;
+  	background-attachment: fixed;
+	z-index: -2;
 }
 
 .hidden {
@@ -23,52 +65,34 @@ transition: opacity 2s;
 .ShapesUp {
 
 	position: absolute;
-	width: 1920px;
-	height: 731.11px;
-	left: 0px;
-	top: -260.72px;
+	width: 100%;
+  	height: 42%;
+  	left: 0%;
+  	top: 0%;
 	z-index: -4;
 }
 
-.ShapesUp.Ellipse1 {
-
-	position: absolute;
-	width: 458.54px;
-	height: 841px;
-	left: 134.7px;
-	top: -45.5px;
-
-	background: #E47610;
-	filter: blur(65px) saturate(200%);
-	transform: rotate(-78deg);
-	border-radius: 50%;
-	z-index: -1;
-	transition: width 2s, height 2s, background 2s, transform 2s;
+.Ellipse1 {
+  position: absolute;
+  width: 48%;
+  height: 150%;
+  left: 0%;
+  top: -55%;
+  background: #E47610;
+  filter: blur(65px) saturate(200%);
+  transform: rotate();
+  border-radius: 50%;
+  z-index: -1;
+  transition: width 2s, height 2s, background 2s, transform 2s;
 }
 
-.ShapesUp.Ellipse3 {
+.Ellipse4 {
 
 	position: absolute;
-	width: 1079px;
-  	height: 621px;
-  	left: 841px;
-	top: -39.99px;
-
-	background: #AC00E9;
-	filter: blur(65px) saturate(150%);
-	border-radius: 50%;
-	z-index: -3;
-	transition: width 2s, height 2s, background 2s, transform 2s;
-
-}
-
-.ShapesUp.Ellipse4 {
-
-	position: absolute;
-	width: 865.87px;
-	height: 556.13px;
-	left: 555px;
-	top: 16.7px;
+	width: 33%;
+  	height: 70%;
+  	left: 41%;
+  	top: 0%;
 
 	background: #979A17;
 	filter: blur(65px) saturate(200%);
@@ -76,6 +100,22 @@ transition: opacity 2s;
 	border-radius: 50%;
 	z-index: -2;
 	transition: width 2s, height 2s, background 2s, transform 2s;
+}
+
+.Ellipse3 {
+
+	position: absolute;
+	width: 47%;
+  	height: 91%;
+  	left: 53%;
+  	top: 0%;
+
+	background: #AC00E9;
+	filter: blur(65px) saturate(150%);
+	border-radius: 50%;
+	z-index: -3;
+	transition: width 2s, height 2s, background 2s, transform 2s;
+
 }
 
 @keyframes colorShift {
@@ -87,57 +127,70 @@ transition: opacity 2s;
     }
 }
 
-.ShapesUp.Ellipse1, .ShapesUp.Ellipse3, .ShapesUp.Ellipse4 {
+.Ellipse1, .Ellipse3, .Ellipse4 {
     animation: colorShift 10s infinite;
 }
 
 /*Верхний блок*/
 .UP { 
 	position: absolute;
-	width: 1271px;
-	height: 120px;
-	left: 623px;
-	top: 25px;
+	width: 100%;
+	height: 12%;
+	left: 0%;
+	top: 2%;
 	z-index: 1;
 }
 
-.DJPLESH { 
-  font-family: 'Xolonium';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 96px;
-  line-height: 100px;
-  letter-spacing: 0.1em;
-  color: #030000;
-  z-index: 1;
-}
-
-.ZAR { 
-
+.Rectangle0 {
+	box-sizing: border-box;
 	position: absolute;
-	width: 329px;
-	height: 40px;
-	left: 1565px;
-	top: 25px;
+	left: 32%;
+  	right: 32%;
+  	top: 0%;
+  	bottom: 0%;
 	z-index: 1;
-	transition: background-color 0.3s ease;
+
 }
 
-.ZAR:hover{
-	background-color: white;
+p.DJPLESH { 
+	position: absolute;
+  	font-family: 'Xolonium';
+  	font-style: normal;
+	width: 100%;
+  	left: 0%;
+  	font-size: 4.9vw;
+  	height: 100%;
+  	letter-spacing: 0.1em;
+  	color: #030000;
+  	z-index: 1;
+
 }
 
-.ZAR.zareg {
+.Rectangle21 {
+
+	box-sizing: border-box;
+	position: absolute;
+	left: 82%;
+  	right: 2%;
+  	top: 0%;
+  	bottom: 66%;
+
+	border: 1px solid #000000;
+	z-index: 1;
+	transition: 1s;
+
+}
+
+.zareg {
 
 	position: absolute;
-	left: 72%;
+	left: 0%;
 	right: 0%;
-	top:0%;
+	top: 22%;
 	bottom: 0%;
 
 	font-family: 'Xolonium';
-	font-size: 16px;
-	line-height: 36px;
+	font-size: 0.8vw;
 	text-align: center;
 	letter-spacing: 0.1em;
 
@@ -145,44 +198,22 @@ transition: opacity 2s;
 	z-index: 1;
 }
 
-.ZAR.Rectangle21 { /*рамка для зарег.*/
-
-	box-sizing: border-box;
-	position: absolute;
-	left: 72%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-
-	border: 1px solid #000000;
-	z-index: 1;
-}
-
-.LOG { 
-	position: absolute;
-	width: 142px;
-	height: 40px;
-	left: 1438px;
-	top: 25px;
-	z-index: 1;
-	transition: background-color 0.3s ease;
-}
-
-.LOG:hover {
-
+.Rectangle21:hover {
 	background-color: white;
+
 }
 
-.LOG.login { /*текст "Войти" */
+.login {
 
 	position: absolute;
-	left: 60%;
-	right: 0%;
-	top: 0%;
+	left: 0%;
+  	right: 0%;
+  	height: 100%;
+  	top: 22%;
+  	bottom: 0%;
 
 	font-family: 'Xolonium';
-	font-size: 16px;
-	line-height: 36px;
+	font-size: 0.8vw;
 	text-align: center;
 	letter-spacing: 0.1em;
 
@@ -191,424 +222,377 @@ transition: opacity 2s;
 
 }
 
-.LOG.Rectangle22 {
+.Rectangle22 {
 
 	box-sizing: border-box;
 	position: absolute;
-	left: 60%;
-	right: 0%;
-	top: 0%;
-	bottom: 0%;
-	cursor: pointer;
+	left: 74%;
+  	right: 19%;
+  	top: 0%;
+  	bottom: 66%;
 
 	border: 1px solid #000000;
 	z-index: 1;
+	transition: 1s;
 }
 
-/* информация по сайту */
+.Rectangle22:hover {
+	background-color: white;
+
+}
+
+.KnopkaJS {
+
+	position: absolute;
+	left: 0%;
+  	right: 0%;
+  	height: 100%;
+  	top: 22%;
+  	bottom: 0%;
+
+	font-family: 'Xolonium';
+	font-size: 0.8vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+
+	color: #000000;
+	z-index: 1;
+
+}
+
+.Rectangle222 {
+
+	box-sizing: border-box;
+	position: absolute;
+	left: 74%;
+  	right: 19%;
+  	top: 0%;
+  	bottom: 66%;
+
+	border: 1px solid #000000;
+	z-index: 1;
+	transition: 1s;
+}
+
+.Rectangle222:hover {
+	background-color: white;
+
+}
+
+.bottom11
+{
+	position: absolute;
+	left: 45%;
+	top: 115%;
+	z-index: 5;
+}
+
+.bottom12
+{
+	position: absolute;
+	left: 50%;
+	top: 115%;
+	z-index: 5;
+}
+
 .InformationAbWeS {
+      position: absolute;
+      width: 100%;
+      height: 86%;
+      left: 0%;
+      top: 36%;
+      z-index: 1;
+    }
 
-	position: absolute;
-	width: 1639px;
-	height: 670px;
-	left: 178px;
-	top: 315px;
-	z-index: 1;
-}
+    .inf2 {
+      position: absolute;
+      width: 26%;
+      height: 15%;
+      left: 36%;
+      top: 7%;
+      font-family: 'Xolonium';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.5vw;
+      line-height: 58px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+      z-index: 1;
+    }
 
-/* DJ PLESH ? */
-.inf1 {
-position: absolute;
-width: 1639px;
-height: 525px;
-left: -24px;
-top: 237px;
+    .inf1 {
+      position: absolute;
+      width: 90%;
+      height: 68%;
+      left: 10%;
+      top: 30%;
+      font-family: 'Xolonium';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.875vw;
+      line-height: 2.2vw;
+      color: #FFFFFF;
+      z-index: 1;
+    }
 
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 43px;
-
-color: #FFFFFF;
-z-index: 1;
-
-}
-
-/* ИНФОРМАЦИЯ ПО САЙТУ */
-.inf2 {
-position: absolute;
-width: 738px;
-height: 116px;
-left: 418px;
-top: 83px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-z-index: 1;
-
-}
 
 /* Line 1 */
 .line1 {
 position: absolute;
-width: 1920px;
-height: 0px;
-left: 0px;
-top: 1097px;
+width: 100%;
+top: 122%;
 
 border: 3px solid #000000;
-transform: rotate(-0.12deg);
+}
+
+/*тур*/
+.TOUR {
+position: absolute;
+width: 100%;
+height: 90.7%;
+left: 0%;
+top: 122.4%;
 
 }
 
-.TOUR {
-position: absolute;
-width: 1920px;
-height: 669px;
-left: 0px;
-top: 1093px;
-} /* тур */
+.TourinRuss {
+	position: absolute;
+	width: 100%;
+	height: 14%;
+	left: 0%;
+	top: 10%;
+	font-family: 'Xolonium';
+	font-style: normal;
+	font-size: 2.5vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+}
 
-/* даты */
-.dates {
-position: absolute;
-width: 1370px;
-height: 394px;
-left: 275px;
-top: 1368px;
+.CityOne {
+	position: absolute;
+	top: 30%;
+	font-family: 'Xolonium';
+	font-style: normal;
+	width: 100%;
+	font-size: 1.875vw;
+	height: 11%;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+}
 
+.BelayaHolynica {
+position: absolute;
+width: 26%;
+left: 9%;
+
+}
+
+.Saratov {
+	position: absolute;
+	width: 14%;
+  	left: 43%;
+
+}
+
+.Velikii {
+	position: absolute;
+	width: 25%;
+  	left: 68%;
 }
 
 .DateOne {
-	top: 300px;
+	position: absolute;
+	top: 36%;
 	font-family: 'Xolonium';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 39px;
+	width: 100%;
+	font-size: 1.6vw;
+	height: 7%;
 	text-align: center;
 	color: #FFFFFF;
+}
+
+.D1 {
+position: absolute;
+width: 9%;
+left: 16%;
+
+}
+
+.D2 {
+position: absolute;
+width: 9%;
+left: 45%;
+
+}
+
+.D3 {
+position: absolute;
+width: 9%;
+left: 75%;
+
+}
+
+.CityTwo {
+	position: absolute;
+	top: 54%;
+	font-family: 'Xolonium';
+	font-style: normal;
+	width: 100%;
+	font-size: 1.875vw;
+	height: 11%;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+}
+
+.NizhTag {
+position: absolute;
+width: 22%;
+left: 10%;
+
+}
+
+.Cherepovec {
+position: absolute;
+width: 17%;
+left: 42%;
+
+}
+
+.NizhSergi {
+position: absolute;
+width: 22%;
+left: 69%;
 
 }
 
 .DateTwo {
-	top: 500px;
+	position: absolute;
+	top: 60%;
 	font-family: 'Xolonium';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 39px;
+	width: 100%;
+	font-size: 1.6vw;
+	height: 7%;
 	text-align: center;
 	color: #FFFFFF;
 }
 
-.DateThree {
-	top: 700px;
-	font-family: 'Xolonium';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 39px;
-	text-align: center;
-	color: #FFFFFF;
-}
-
-/* 1.05.23 */
-.D1 {
-position: absolute;
-width: 181px;
-height: 41px;
-left: 313px;
-
-}
-
-/* 4.05.23 */
-.D2 {
-position: absolute;
-width: 180px;
-height: 41px;
-left: 869px;
-
-}
-
-/* 8.05.23 */
-.D3 {
-position: absolute;
-width: 180px;
-height: 41px;
-left: 1449px;
-
-}
-
-/* 25.05.23 */
 .D4 {
 position: absolute;
-width: 218px;
-height: 41px;
-left: 1427px;
+width: 10%;
+left: 16%;
 
 }
 
-/* 20.05.23 */
 .D5 {
 position: absolute;
-width: 217px;
-height: 41px;
-left: 869px;
+width: 10%;
+left: 45%;
 
 }
 
-/* 14.05.23 */
 .D6 {
 position: absolute;
-width: 210px;
-height: 41px;
-left: 285px;
+width: 10%;
+left: 75%;
 
-}
-
-/* 5.06.23 */
-.D7 {
-position: absolute;
-width: 181px;
-height: 41px;
-left: 887px;
-
-}
-
-/* 10.05.23 */
-.D8 {
-position: absolute;
-width: 209px;
-height: 41px;
-left: 1434px;
-
-}
-
-/* 29.05.23 */
-.D9 {
-position: absolute;
-width: 219px;
-height: 41px;
-left: 275px;
-
-}
-
-/* города */
-.cityes {
-position: absolute;
-width: 1680px;
-height: 411px;
-left: 132px;
-top: 34px;
-
-}
-
-.CityOne {
-top: 238px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 43px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-}
-
-.CityTwo {
-	top: 438px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 43px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
 }
 
 .CityThree {
-		top: 638px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 43px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
+	position: absolute;
+	top: 76%;
+	font-family: 'Xolonium';
+	font-style: normal;
+	width: 100%;
+	font-size: 1.875vw;
+	height: 11%;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
-/* БЕЛАЯ ХОЛУНИЦА */
-.BelayaHolynica {
-position: absolute;
-width: 509px;
-height: 63px;
-left: 172px;
-
-}
-
-/* САРАТОВ */
-.Saratov {
-position: absolute;
-width: 303px;
-height: 63px;
-left: 811px;
-
-}
-
-/* ВЕЛИКИЙ УСТЮГ */
-.Velikii {
-position: absolute;
-width: 487px;
-height: 63px;
-left: 1295px;
-
-}
-
-/* ЧЕЛЯБИНСК */
-.chelaba {
-position: absolute;
-width: 361px;
-height: 63px;
-left: 795px;
-
-}
-
-/* НИЖНИЙ ТАГИЛ */
-.NizhTag {
-position: absolute;
-width: 452px;
-height: 46px;
-left: 170px;
-
-}
-
-/* ЧЕРЕПОВЕЦ */
-.Cherepovec {
-position: absolute;
-width: 343px;
-height: 46px;
-left: 806px;
-
-}
-
-/* ЖЕЛЕЗНОДОРОЖНЫЙ */
 .Zelezno {
 position: absolute;
-width: 622px;
-height: 63px;
-left: 1228px;
-
+width: 29%;
+left: 6%;
 }
 
-/* НИЖНИЕ СЕРГИ */
-.NizhSergi {
+.chelaba {
 position: absolute;
-width: 462px;
-height: 46px;
-left: 1301px;
-
+width: 17%;
+left: 42%;
 }
 
-/* ЭЛЕКТРОСТАЛЬ */
 .Electro {
 position: absolute;
-width: 439px;
-height: 63px;
-left: 170px;
+width: 22%;
+left: 69%;
+}
+
+.DateThree {
+	position: absolute;
+	top: 82%;
+	font-family: 'Xolonium';
+	font-style: normal;
+	width: 100%;
+	font-size: 1.6vw;
+	height: 7%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.D7 {
+position: absolute;
+width: 9%;
+left: 16%;
 
 }
 
-/* ТУР ПО РОССИИ */
-.TourinRuss {
+.D8 {
 position: absolute;
-width: 624px;
-height: 96px;
-left: 660px;
-top: 65px;
+width: 10%;
+left: 75%;
 
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
-text-align: center;
-letter-spacing: 0.1em;
+}
 
-color: #FFFFFF;
+.D9 {
+position: absolute;
+width: 11%;
+left: 44%;
 
 }
 
 .line_2 {
 position: absolute;
-width: 1919px;
-height: 0px;
-left: 1px;
-top: 1920px;
+width: 100%;
+top: 213%;
 
 border: 3px solid #000000;
-transform: rotate(-0.06deg);
-
 }
 
 /* Свежие новости */
 .News {
 position: absolute;
-width: 1919px;
-height: 1127px;
-top: 1930px;
-
+width: 100%;
+height: 130%;
+top: 213.8%;
 }
 
-/* Чемпионат мира по диджеингу IDA WORLD 2023 в этом году претерпел заметные изменения. В частности, появилась новая категория, а именно Party Rocking Battle (или по другому "Зажигательная вечеринка"). Также в новом сезоне изменился официальный партнер чемпионата, им стала компания Pioneer DJ, которая и предоставляет призы победителям и призерам… */
-.worldСhamp {
+.lastNews {
 position: absolute;
-width: 1587px;
-height: 276px;
-left: 155px;
-top: 850px;
+width: 100%;
+height: 5%;
+left: 0%;
+top: 5%;
 
 font-family: 'Xolonium';
 font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 39px;
-display: flex;
-align-items: center;
-
-color: #FFFCFC;
-
-}
-
-/* DJ CHIB ONE Окт 23, 2023 */
-.DJCHIB {
-position: absolute;
-width: 423px;
-height: 38px;
-left: 122px;
-top: 830px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
+font-size: 2.5vw;
 text-align: center;
 letter-spacing: 0.1em;
 
@@ -616,346 +600,254 @@ color: #FFFFFF;
 
 }
 
-/* Определился чемпион мира по диджеингу (IDA WORLD) в категории Party Rocking Battle. */
-.IDAWORLD {
-position: absolute;
-width: 1506px;
-height: 29px;
-left: 155px;
-top: 800px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-/* Rectangle 28 */
 .Rectangle28 {
 position: absolute;
-width: 1611px;
-height: 577px;
-left: 157px;
-top: 200px;
+width: 84%;
+height: 50%;
+left: 8%;
+top: 14%;
 background: url('images/news.jpg');
+background-size: cover;
 z-index: 1;
 }
 
-/* СВЕЖИЕ НОВОСТИ */
-.lastNews {
+.Rectangle-1 {
 position: absolute;
-width: 887px;
-height: 68px;
-left: 534px;
-top: 70px;
+width: 84%;
+height: 36%;
+left: 8%;
+top: 64%;
 
 font-family: 'Xolonium';
 font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
-text-align: center;
 letter-spacing: 0.1em;
-
 color: #FFFFFF;
 
+}
+
+.IDAWORLD {
+position: absolute;
+width: 100%;
+height: 8%;
+left: 0%;
+top: 2%;
+font-size: 1.25vw;
+}
+
+.DJCHIB {
+position: absolute;
+width: 100%;
+height: 5%;
+left: 0%;
+top: 10%;
+font-size: 0.93vw;
+}
+
+.worldСhamp {
+position: absolute;
+width: 100%;
+height: 10%;
+left: 0%;
+top: 20%;
+
+font-size: 1.6vw;
 }
 
 .line_3 {
 position: absolute;
-width: 1919px;
-height: 0px;
-left: 1px;
-top: 3098px;
+width: 100%;
+top: 344%;
 
 border: 3px solid #000000;
-transform: rotate(-0.12deg);
-
 }
 
 /* Cвежая музыка */
 .lastMusic {
-position: absolute;
-width: 1510px;
-height: 1408px;
-left: 199px;
-top: 3129px;
-
+	position: absolute;
+	width: 100%;
+	height: 166.1%;
+	left: 0%;
+	top: 344.6%;
 }
 
-/* Описание треков */
-.trackDescriptions {
+.lastM {
 position: absolute;
-width: 1510px;
-height: 759px;
-left: 199px;
-top: 3778px;
+width: 100%;
+height: 4%;
+left: 0%;
+top: 4%;
 
-}
-
-.constDescriptions {
 font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 34px;
-left: 20px;
-
-color: #FFFFFF;
-}
-
-/* One More Time - иконический электронный хит, который отражает эссенцию французского хауса. Сочетание захватывающего ритма, мелодичных синтезаторов и заразительного вокала создает уникальное музыкальное путешествие. Этот трек олицетворяет дух ночных вечеринок и пронизан чувством веселья и беззаботности. One More Time безупречно демонстрирует мастерство Daft Punk в создании уникальных и запоминающихся музыкальных композиций. */
-.OneMoreTime {
-position: absolute;
-width: 1504px;
-height: 284px;
-top: 703px;
-
-}
-
-/* Lean On - захватывающий хит, созданный в соавторстве с DJ Snake. Сочетание восточных мелодий с современным электронным звучанием делает этот трек веселым и энергичным. Вокал MØ придает композиции свежий и волнующий характер, создавая непринужденную и динамичную атмосферу. "Lean On" с успехом объединяет различные музыкальные элементы, делая его одним из самых незабываемых треков электронной музыки. */
-.LeanOn {
-position: absolute;
-width: 1506px;
-height: 238px;
-top: 1120px;
-
-}
-
-/* Titanium - электронный хит, который отражает силу и несгибаемость. Вокал Сии переплетается с энергичным звучанием, создавая вдохновляющую атмосферу уверенности и непоколебимости. Этот трек превосходно передает эмоциональную глубину и стойкость, делая его неотъемлемой частью современной музыкальной культуры. */
-.Titanium {
-position: absolute;
-width: 1510px;
-height: 197px;
-top: 928px;
-
-}
-
-/* Назван треков */
-.nameTrack {
-position: absolute;
-width: 1339px;
-height: 40px;
-top: 10px;
-
-}
-
-.constNameTrack {
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.1em;
-top: 550px;
-
-color: #FFFFFF;
-}
-
-/* LEAN ON */
-.LEANON {
-position: absolute;
-width: 177px;
-height: 39px;
-left: 1265px;
-
-}
-
-/* TITANIUM */
-.TITANIUM {
-position: absolute;
-width: 196px;
-height: 34px;
-left: 90px;
-
-}
-
-/* ONE MORE TIME */
-.ONEMORETIME {
-position: absolute;
-width: 331px;
-height: 32px;
-left: 615px;
-
-}
-
-/* Артисты */
-.artists {
-position: absolute;
-width: 1503px;
-height: 224px;
-left: 2px;
-
-}
-
-.constArtists {
-top: 595px;
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
+font-size: 2.5vw;
 text-align: center;
 letter-spacing: 0.1em;
 
 color: #FFFFFF;
-}
-
-/* DJ SNAKE */
-.DJSNAKE {
-position: absolute;
-width: 176px;
-height: 19px;
-left: 1265px;
 
 }
 
-/* DAFT PUNK */
-.DAFTPUNK {
-position: absolute;
-width: 169px;
-height: 20px;
-left: 695px;
-
-}
-
-/* DAVID GUETTA */
-.DAVIDGUETTA {
-position: absolute;
-width: 179px;
-height: 21px;
-left: 100px;
-
-}
-
-/* обложки */
 .covers {
 position: absolute;
-width: 1503px;
-height: 350px;
-top: 200px;
-
+width: 100%;
+height: 18%;
+top: 13%;
 }
 
 .constCover {
 position: absolute;
-width: 350px;
-height: 350px;
-
+width: 14%;
+height: 100%;
 }
 
-/* Rectangle 29 */
 .Rectangle29 {
-left: 15px;
+	position: absolute;
+left: 20%;
 background: url('images/David Guetta.jpg');
 background-size: cover;
-
 }
 
-/* Rectangle 30 */
 .Rectangle30 {
-left: 600px;
-
+	position: absolute;
+left: 43%;
 background: url('images/Daft ounk.jpg');
 background-size: cover;
-
 }
 
-/* Rectangle 31 */
 .Rectangle31 {
-left: 1170px;
-
+	position: absolute;
+left: 66%;
 background: url('images/dj snake.jpg');
 background-size: cover;
+}
+
+.nameTrack {
+position: absolute;
+width: 100%;
+height: 2%;
+top: 32%;
+font-family: 'Xolonium';
+font-size: 1.25vw;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+text-align: center;
+}
+
+.TITANIUM {
+position: absolute;
+width: 10%;
+left: 22%;
 
 }
 
-/* СВЕЖАЯ МУЗЫКА */
-.lastM {
+.ONEMORETIME {
 position: absolute;
-width: 721px;
-height: 68px;
-left: 420px;
-top: 60px;
+width: 14%;
+left: 43%;
+font-size: 1.2vw
+;
+}
 
+.LEANON {
+position: absolute;
+width: 10%;
+left: 68%;
+
+}
+
+.artists {
+position: absolute;
+width: 100%;
+height: 2%;
+left: 0%;
+top: 35%;
 font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
+font-size: 0.83vw;
 text-align: center;
 letter-spacing: 0.1em;
-
 color: #FFFFFF;
+}
 
+.DAVIDGUETTA {
+position: absolute;
+width: 10%;
+left: 22%;
+
+}
+
+.DAFTPUNK {
+position: absolute;
+width: 8%;
+left: 46%;
+}
+
+.DJSNAKE {
+position: absolute;
+width: 8%;
+left: 69%;
+
+}
+
+.trackDescriptions {
+	position: absolute;
+	width: 100%;
+	height: 61%;
+	left: 0%;
+	top: 39%;
+	font-family: 'Xolonium';
+	font-size: 1.458vw;
+	color: #FFFFFF;
+}
+
+.DescriptionsSongs {
+	position: absolute;
+	width: 60%;
+	height: 88%;
+	top: 4%;
+	left: 20%;
 }
 
 .line_4 {
 position: absolute;
-width: 1919px;
-height: 0px;
-left: 0px;
-top: 4601px;
+width: 100%;
+top: 510.5%;
 
 border: 3px solid #000000;
-transform: rotate(-0.09deg);
 
 }
 
 .Const_Rectangle_123 {
 box-sizing: border-box;
-
 position: absolute;
-width: 549px;
-height: 656px;
-left: 0px;
+width: 100%;
+height: 100%;
 background: linear-gradient(180deg, #FFFFFF 62.5%, rgba(0, 0, 0, 0) 100%);
 border: 5px solid #000000;
 
 }
 
 .Const_Name {
-position: absolute;
-width: 400px;
-height: 44px;
-left: 50%;
-transform: translateX(-50%);
-top: 20px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.1em;
-
-z-index: 2;
-
-color: #000000;
-
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	top: 3%;
+	font-family: 'Xolonium';
+	font-size: 1.25vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	z-index: 2;
+	color: #000000;
 }
 
 .Const_Rectangle_Must_Dietils {
-box-sizing: border-box;
-
-position: absolute;
-left: 25%;
-right: 25%;
-top: 81%;
-bottom: 9%;
-
-border: 3px solid #FFFFFF;
-transition: background-color 0.3s ease;
-
+	box-sizing: border-box;
+	position: absolute;
+	width: 48%;
+	left: 25%;
+	right: 25%;
+	top: 84%;
+	bottom: 6%;
+	border: 3px solid #FFFFFF;
+	transition: background-color 0.3s ease;
 }
 
 .Const_Rectangle_Must_Dietils:hover {
@@ -963,886 +855,443 @@ transition: background-color 0.3s ease;
 }
 
 .Сonst_Moredetails {
-position: absolute;
-left: 11%;
-top: 25%;
-
-font-family: 'Xolonium';
-font-size: 24px;
-line-height: 28px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
+	position: absolute;
+	width: 84%;
+	left: 8%;
+	top: 25%;
+	font-family: 'Xolonium';
+	font-size: 1.25vw;
+	display: flex;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
 /* курсы */
 .Courses {
-position: absolute;
-width: 1753px;
-height: 838px;
-left: 74px;
-top: 4607px;
-
+	position: absolute;
+	width: 100%;
+	height: 109%;
+	left: 0%;
+	top: 511.2%;
 }
 
 .Const_Text_Well {
-position: absolute;
-width: 481px;
-height: 72px;
-left: 40px;
-top: 320px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.1em;
-
-color: #000000;
-
-}
-
-.Const_Text_Practice_Well {
-position: absolute;
-width: 436px;
-height: 24px;
-left: 40px;
-top: 400px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.1em;
-
-color: #000000;
-
+	position: absolute;
+	width: 90%;
+	height: 22%;
+	left: 5%;
+	top: 49%;
+	font-family: 'Xolonium';
+	font-size: 1.041vw;
+	letter-spacing: 0.1em;
+	color: #000000;
 }
 
 .well {
-position: absolute;
-width: 295px;
-height: 61px;
-left: 725px;
-top: 50px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
+	position: absolute;
+	width: 14%;
+	height: 6%;
+	left: 43%;
+	top: 7%;
+	font-family: 'Xolonium';
+	font-size: 2.5vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
 .boxBasic {
-position: absolute;
-width: 551px;
-height: 657px;
-left: 0px;
-top: 210px;
+	position: absolute;
+	width: 28%;
+	height: 67%;
+	left: 5%;
+	top: 22%;
 }
 
 .Rectangle39 {
-position: absolute;
-width: 253px;
-height: 250px;
-left: 143px;
-top: 55px;
-background: url('images/lbce.png');
-background-size: cover;
-
+	position: absolute;
+	width: 48%;
+	height: 39%;
+	left: 26%;
+	top: 8%;
+	background: url('images/lbce.png');
+	background-size: cover;
 }
 
 .pro {
-position: absolute;
-width: 551px;
-height: 657px;
-left: 604px;
-top: 210px;
-
+	position: absolute;
+	width: 28%;
+	height: 67%;
+	left: 36%;
+	top: 22%;
 }
 
 .Rectangle40 {
-position: absolute;
-width: 227px;
-height: 226px;
-left: 154px;
-top: 66px;
+	position: absolute;
+	width: 48%;
+	height: 39%;
+	left: 26%;
+	top: 8%;
 background: url('images/Без имени.png');
+background-size: cover;
 
 }
 
 .Pro_Xl {
-position: absolute;
-width: 551px;
-height: 657px;
-left: 1210px;
-top: 210px;
-
+	position: absolute;
+	width: 28%;
+	height: 67%;
+	left: 67%;
+	top: 22%;
 }
 
 .Rectangle41 {
-position: absolute;
-width: 227px;
-height: 226px;
-left: 158px;
-top: 67px;
-background: url('images/Без имени 1.png');
-
+	position: absolute;
+	width: 48%;
+	height: 39%;
+	left: 26%;
+	top: 8%;
+	background: url('images/Без имени 1.png');
+	background-size: cover;
 }
 
 .line_5 {
 position: absolute;
-width: 1920px;
-height: 0px;
-left: 0px;
-top: 5588px;
-
+width: 100%;
+top: 620.2%;
 border: 3px solid #000000;
-transform: rotate(-0.06deg);
-
-}
-
-.Figures_Courses {
-position: absolute;
-width: 1851px;
-height: 920px;
-left: -47px;
-top: 61px;
- z-index: -4;
-}
-
-.Ellipse5 {
-position: absolute;
-width: 742px;
-height: 649px;
-left: -45px;
-top: 152px;
-
-background: rgba(197, 176, 255, 0.6);
-filter: blur(65px) saturate(200%);
-transform: rotate(90deg);
-
-}
-
-.Ellipse6 {
-position: absolute;
-width: 920px;
-height: 789px;
-left: 464px;
-top: 18px;
-background: rgba(197, 176, 255, 0.6);
-filter: blur(65px) saturate(200%);
-transform: rotate(90deg);
-
-}
-
-.Ellipse7 {
-position: absolute;
-width: 742px;
-height: 649px;
-left: 1155px;
-top: 150px;
-
-background: rgba(197, 176, 255, 0.6);
-filter: blur(65px) saturate(200%);;
-transform: rotate(90deg);
-
 }
 
 /* Оборудование */
 .equipment {
-    position: absolute;
-    width: 1753px;
-    height: 836px;
-    left: 74px;
-    top: 5649px;
+	position: absolute;
+	width: 100%;
+	height: 114.4%;
+	left: 0%;
+	top: 621%;
 }
 
 .EQUIPMENT1 {
-    position: absolute;
-    width: 613px;
-    height: 90px;
-    left: 595px;
-    top: 10px;
-    font-family: 'Xolonium';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
+	position: absolute;
+	width: 30%;
+	height: 7%;
+	left: 35%;
+	top: 5%;
+	font-family: 'Xolonium';
+	font-size: 2.5vw;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+	text-align: center;
 }
 
 .Controllers {
-    position: absolute;
-    width: 551px;
-    height: 657px;
-    left: 0px;
-    top: 147px;
+	position: absolute;
+   	width: 28%;
+  	height: 67%;
+  	left: 5%;
+  	top: 22%;
 }
 
 .equipment1_jpg {
-position: absolute;
-width: 378px;
-height: 293px;
-left: 91px;
-top: 48px;
-
-background: url('images/оборудование1.jpg');
-background-size: cover;
+	position: absolute;
+	width: 69%;
+	height: 42%;
+	left: 16%;
+	top: 8%;
+	background: url('images/оборудование1.jpg');
+	background-size: cover;
 }
 
 .Sound_Сards {
-position: absolute;
-width: 549px;
-height: 656px;
-left: 604px;
-top: 147px;
-
+	position: absolute;
+	width: 28%;
+	height: 67%;
+	left: 36%;
+	top: 22%;
 }
 
 .equipment2_jpg {
-position: absolute;
-width: 327px;
-height: 274px;
-left: 101px;
-top: 110px;
-
-background: url('images/оборудование2.jpg');
-background-size: cover ;
-
+	position: absolute;
+	width: 67%;
+	height: 42%;
+	left: 17%;
+	top: 15%;
+	background: url('images/оборудование2.jpg');
+	background-size: cover;
 }
 
 .mixers {
-position: absolute;
-width: 551px;
-height: 657px;
-left: 1210px;
-top: 147px;
-
+	position: absolute;
+	width: 28%;
+	height: 67%;
+	left: 67%;
+	top: 22%;
 }
 
 .Mixers_jpg {
-position: absolute;
-width: 355px;
-height: 209px;
-left: 101px;
-top: 121px;
-
-background: url('images/оборудование3.jpg');
-background-size: cover;
+	position: absolute;
+	width: 73%;
+	height: 34%;
+	left: 14%;
+	top: 18%;
+	background: url('images/оборудование3.jpg');
+	background-size: cover;
 }
 
 .line_6 {
 position: absolute;
-width: 1920px;
-height: 0px;
-left: 0px;
-top: 6627px;
-
+width: 100%;
+top: 735.4%;
 border: 3px solid #000000;
-transform: rotate(-0.12deg);
-
-}
-
-/* фигуры оборудование */
-.figures_Equipment {
-position: absolute;
-width: 1851px;
-height: 894px;
-left: -43px;
-top: 21px;
-z-index: -4;
-}
-
-.Ellipse8 {
-position: absolute;
-width: 742px;
-height: 649px;
-left: 1149px;
-top: 129px;
-
-background: rgba(255, 176, 252, 0.6);
-filter: blur(65px) saturate(200%);;
-transform: rotate(90deg);
-
-}
-
-.Ellipse9 {
-position: absolute;
-width: 894px;
-height: 883px;
-left: 462px;
-top: -18px;
-
-background: rgba(255, 176, 252, 0.6);
-filter: blur(65px) saturate(200%);;
-transform: rotate(0deg);
-
-}
-
-.Ellipse10 {
-position: absolute;
-width: 742px;
-height: 649px;
-left: -48px;
-top: 131px;
-
-background: rgba(255, 176, 252, 0.6);
-filter: blur(65px) saturate(200%);;
-transform: rotate(90deg);
-
 }
 
 /* мерч */
 .Merch {
-position: absolute;
-width: 1753px;
-height: 880px;
-left: 74px;
-top: 6661px;
-
+	position: absolute;
+	width: 100%;
+	height: 114.4%;
+	left: 0%;
+	top: 736.2%;
 }
 
 .Merch_h {
-position: absolute;
-width: 195px;
-height: 46px;
-left: 780px;
-top: 60px;
-
-text-align: center;
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 58px;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
+	position: absolute;
+	width: 12%;
+	height: 5%;
+	left: 44%;
+	top: 8%;
+	text-align: center;
+	font-family: 'Xolonium';
+	font-size: 2.5vw;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
 .hoodie {
-position: absolute;
-width: 551px;
-height: 657px;
-left: 0px;
-top: 223px;
-
+	position: absolute;
+   	width: 28%;
+  	height: 67%;
+  	left: 5%;
+  	top: 22%;
 }
 
 .Hoodi_jpg {
 position: absolute;
-width: 258px;
-height: 328px;
-left: 143px;
-top: 62px;
+width: 50%;
+height: 50%;
+left: 25%;
+top: 10%;
 
 background: url('images/27666.970.jpg');
 background-size: cover ;
 }
 
 .T-shirts {
-position: absolute;
-width: 551px;
-height: 657px;
-left: 604px;
-top: 223px;
+	position: absolute;
+	width: 28%;
+	height: 67%;
+	left: 36%;
+	top: 22%;
 
 }
 
 .T-shirts_jpg {
-position: absolute;
-width: 380px;
-height: 395px;
-left: 85px;
-top: 6px;
-
-background: url('images/майка.png');
-background-size: cover;
-z-index: 1;
+	position: absolute;
+	width: 74%;
+	height: 55%;
+	left: 13%;
+	top: 2%;
+	background: url('images/майка.png');
+	background-size: cover;
+	z-index: 1;
 }
 
 .accessories {
-position: absolute;
-width: 551px;
-height: 657px;
-left: 1210px;
-top: 223px;
-
+	position: absolute;
+	width: 28%;
+	height: 67%;
+	left: 67%;
+	top: 22%;
 }
 
 .accessories_jpg {
-position: absolute;
-width: 374px;
-height: 300px;
-left: 53px;
-top: 73px;
-
-background: url('images/42f6443a56e826982a362915e47dc5f3.jpeg');
-background-size: cover;
-}
-
-.Figures_Merch {
-position: absolute;
-width: 1851px;
-height: 835px;
-left: -43px;
-top: 61px;
-z-index: -4;
-}
-
-.Ellipse11 {
-position: absolute;
-width: 742px;
-height: 649px;
-left: 1149px;
-top: 166px;
-
-background: rgba(255, 242, 176, 0.6);
-filter: blur(65px) saturate(200%);;
-transform: rotate(90deg);
-
-}
-
-.Ellipse12 {
-position: absolute;
-width: 835px;
-height: 998px;
-left: 507px;
-top: -82px;
-background: rgba(255, 242, 176, 0.6);
-filter: blur(65px) saturate(200%);;
-transform: rotate(90deg);
-
-}
-
-.Ellipse13 {
-position: absolute;
-width: 742px;
-height: 649px;
-left: -48px;
-top: 164px;
-
-background: rgba(255, 242, 176, 0.6);
-filter: blur(65px) saturate(200%);;
-transform: rotate(90deg);
-
+	position: absolute;
+	width: 94%;
+	height: 50%;
+	left: 3%;
+	top: 12%;
+	background: url('images/42f6443a56e826982a362915e47dc5f3.jpeg');
+	background-size: cover;
 }
 
 .bottom {
 position: absolute;
-width: 1920px;
-height: 370px;
-left: 0px;
-top: 7699px;
-
+width: 100%;
+height: 41.1%;
+left: 0%;
+top: 856%;
 }
 
 .Rectangle_bottom {
 position: absolute;
-width: 1920px;
-height: 372px;
-left: 0px;
+width: 100%;
+height: 100%;
+left: 0%;
 background-color: black;
 z-index: -4;
 }
 
 .DJ_PLESH {
-position: absolute;
-width: 236.16px;
-height: 28px;
-left: calc(50% - 236.16px/2 - 810px);
-top: 105px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.DJ_PLESH_2 {
-position: absolute;
-width: 236.16px;
-height: 28px;
-left: calc(50% - 236.16px/2 - 810px);
-top: 150px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.DJ_PLESH_3 {
-position: absolute;
-width: 236.16px;
-height: 28px;
-left: calc(50% - 236.16px/2 - 810px);
-top: 195px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.DJ_PLESH_4 {
-position: absolute;
-width: 236.16px;
-height: 28px;
-left: calc(50% - 236.16px/2 - 810px);
-top: 240px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.DJ_PLESH_5 {
-position: absolute;
-width: 236.16px;
-height: 28px;
-left: calc(50% - 236.16px/2 - 810px);
-top: 285px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
+	position: absolute;
+	width: 12%;
+	height: 61%;
+	left: 1%;
+	top: 26%;
+	font-family: 'Xolonium';
+	font-size: 1.25vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
 .Const_Rectangle_bottom {
-box-sizing: border-box;
-
-position: absolute;
-width: 346.77px;
-height: 221px;
-
-border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #FFFFFF;
 }
 
 .Const_Name_Bottom {
-position: absolute;
-width: 311px;
-height: 29px;
-left: 50%;
-transform: translateX(-50%);
-top: 12.5px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
+	position: absolute;
+	width: 74%;
+	height: 12%;
+	left: 13%;
+	top: 7%;
+	font-family: 'Xolonium';
+	font-size: 1.041vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
 .Const_Line_Bottom {
-position: absolute;
-width: 346.77px;
-height: 0px;
-left: 0px;
-top: 25%;
-
-border: 1px solid #FFFFFF;
-
+	position: absolute;
+	width: 100%;
+	height: 0%;
+	left: 0%;
+	top: 25%;
+	border: 1px solid #FFFFFF;
 }
 
 /* Поддержка */
 .support {
-position: absolute;
-width: 347.76px;
-height: 221px;
-left: 298.82px;
-top: 100px;
-
+	position: absolute;
+	width: 18%;
+	height: 60%;
+	left: 16%;
+	top: 27%;
 }
 
-.Help_Center {
-position: absolute;
-width: 227.19px;
-height: 28px;
-left: 18%;
-top: 77px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.FAQ {
-position: absolute;
-width: 288.97px;
-height: 53px;
-left: 8%;
-top: 162px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.Complain {
-position: absolute;
-width: 172.39px;
-height: 26px;
-left: 25%;
-top: 118px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
+.Text_support {
+	position: absolute;
+	width: 62%;
+	height: 54%;
+	left: 18%;
+	top: 34%;
+	font-family: 'Xolonium';
+	font-size: 0.83vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
 /* Партнер */
 .partner {
-position: absolute;
-width: 347.76px;
-height: 221px;
-left: 1275px;
-top: 100px;
-
+	position: absolute;
+	width: 18%;
+	height: 60%;
+	left: 66%;
+	top: 27%;
 }
 
-.Partnership {
-position: absolute;
-width: 168.4px;
-height: 23px;
-left: 26%;
-top: 77px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.Bonuses_from_partners {
-
-position: absolute;
-width: 258px;
-height: 30px;
-left: 13%;
-top: 118px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.Guest_post {
-position: absolute;
-width: 243.14px;
-height: 26px;
-left: 15%;
-top: 162px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
+.Text_partner {
+	position: absolute;
+	width: 70%;
+	height: 54%;
+	left: 15%;
+	top: 34%;
+	font-family: 'Xolonium';
+	font-size: 0.83vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
 /* Информация о нас */
 .Information_about_us {
-position: absolute;
-width: 409.54px;
-height: 221px;
-left: 755px;
-top: 100px;
-
+	position: absolute;
+	width: 22%;
+	height: 60%;
+	left: 39%;
+	top: 27%;
 }
 
 .Rectangle25 {
 box-sizing: border-box;
-
 position: absolute;
-width: 409.54px;
-height: 221px;
-left: 0px;
-top: 0px;
+width: 100%;
+height: 100%;
+left: 0%;
+top: 0%;
 border: 1px solid #FFFFFF;
 
 }
 
 .line_2_Information {
 position: absolute;
-width: 409.54px;
-height: 0px;
-left: 0px;
+width: 100%;
+height: 0%;
+left: 0%;
 top: 25%;
 
 border: 1px solid #FFFFFF;
 
 }
 
-.Street {
-position: absolute;
-width: 319.86px;
-height: 52px;
-left: 47.1px;
-top: 72px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.number {
-position: absolute;
-width: 261.07px;
-height: 36px;
-left: 73.0px;
-top: 131px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
-}
-
-.pl3shkov {
-position: absolute;
-width: 340.79px;
-height: 29px;
-left: 34px;
-top: 174px;
-
-font-family: 'Xolonium';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.1em;
-
-color: #FFFFFF;
-
+.Text_Information {
+	position: absolute;
+	width: 74%;
+	height: 54%;
+	left: 13%;
+	top: 34%;
+	font-family: 'Xolonium';
+	font-size: 0.83vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
 }
 
 /* Иконки приложений */
 .Application_icons {
-position: absolute;
-width: 158px;
-height: 139px;
-left: 1694px;
-top: 140px;
-
+	position: absolute;
+	width: 8%;
+	height: 42%;
+	left: 88%;
+	top: 37%;
 }
 
 .Icon_Inst {
-position: absolute;
-left: 5%;
-right: 50%;
-top: 5px;
-bottom: 0%;
-
-background: url('images/instagram.png');
-background-size: cover ;
-width: 66px;
-height: 66px;
-
+	position: absolute;
+	left: 5%;
+	right: 50%;
+	top: 10px;
+	bottom: 0%;
+	background: url('images/instagram.png');
+	background-size: cover;
+	width: 45%;
+	height: 45%;
 }
 
 .Icone_Tel {
@@ -1854,20 +1303,20 @@ bottom: 0%;
 
 background: url('images/telegram.png');
 background-size: cover;
-width: 66px;
-height: 66px;
+width: 45%;
+height: 45%;
 }
 
 .Icon_YT {
-position: absolute;
-left: 50%;
-right: 0%;
-top: 0%;
-bottom: 50%;
-
-background: url('images/youtube.png');
-background-size: cover;
-
+	position: absolute;
+	left: 50%;
+	right: 0%;
+	top: 0%;
+	bottom: 50%;
+	background: url('images/youtube.png');
+	background-size: cover;
+	width: 56%;
+	height: 45%;
 }
 
 .Icon_VK {
@@ -1879,44 +1328,6 @@ bottom: 0%;
 
 background: url('images/vkontakte.png');
 background-size: cover;
-width: 66px;
-height: 66px;
-}
-
-.Rectangle11 {
-
-	position: absolute;
-	width: 1920px;
-	height: 8070px;
-	left: 0px;
-	top: 0px;
-	background-color: rgba(19, 19, 19, 0.2);
-	backdrop-filter: blur(2px);
-	z-index: -2;
-}
-
-.Rectangle2 {
-
-	position: absolute;
-	width: 4091px;
-	height: 8070px;
-	left: -2171px;
-	top: -1px;
-
-	background-color: rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(50px);
-	z-index: -3;
-}
-
-.background { 
-
-	position: relative;
-	height: 100%;
-	width: 1920px;
-	background-image: url("/home/mihail/Internet_technologies/Website DJ PLESH/images/background.jpg");
-  	background-repeat: no-repeat; 
-  	background-size: cover; 
-  	background-position: center;
-  	background-attachment: fixed;
-  	z-index: -5;
+width: 45%;
+height: 45%;
 }

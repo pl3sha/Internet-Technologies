@@ -1,0 +1,497 @@
+@media screen and (max-width: 1125px) {
+
+.ShapesUp {
+    width: 100%;
+    height: 25%;
+}
+
+.UP {
+  width: 100%;
+  height: 10%;
+}
+
+.Rectangle0 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 66%;
+  left: 17%;
+  right: 32%;
+  top: 41%;
+  bottom: 0%;
+  z-index: 1;
+  height: 45%;
+}
+
+p.DJPLESH {
+  font-size: 88px;
+}
+
+.Rectangle21 {
+  box-sizing: border-box;
+  position: absolute;
+  left: 79%;
+  right: 2%;
+  top: 10%;
+  bottom: 76%;
+  border: 3px solid #000000;
+  z-index: 1;
+}
+
+.zareg {
+  font-size: 10px;
+}
+
+.Rectangle22 {
+  box-sizing: border-box;
+  position: absolute;
+  left: 66%;
+  right: 22%;
+  top: 10%;
+  bottom: 75%;
+  border: 3px solid #000000;
+  z-index: 1;
+}
+
+.login {
+  font-size: 15px;
+
+}
+
+.inf2 {
+  font-size: 51px;
+  width: 54%;
+  height: 8%;
+  left: 22%;
+}
+
+.inf1 {
+font-size: 40px;
+height: 50%;
+line-height: 40px;
+left: 6%;
+}
+
+.TourinRuss {
+font-size: 50px;
+
+}
+
+.CityOne {
+font-size: 30px;
+}
+
+.DateOne {
+  font-size: 25px;
+}
+
+.CityTwo {
+font-size: 24px;
+}
+
+.DateTwo {
+font-size: 25px;
+}
+
+.CityThree {
+font-size: 22px;
+}
+
+.DateThree {
+  font-size: 25px;
+}
+
+.lastNews {
+  font-size: 52px;
+}
+
+.IDAWORLD {
+  font-size: 26px;
+}
+
+.DJCHIB {
+  font-size: 26px;
+}
+
+.worldСhamp {
+  font-size: 40px;
+}
+
+.lastM {
+  font-size: 61px;
+}
+
+.Rectangle29 {
+  position: absolute;
+  left: 2%;
+  width: 30%;
+  height: 46%;
+  background: url('images/David Guetta.jpg');
+  background-size: cover;
+}
+
+.Rectangle30 {
+  position: absolute;
+  left: 35%;
+  width: 30%;
+  height: 46%;
+  background: url('images/Daft ounk.jpg');
+  background-size: cover;
+}
+
+.Rectangle31 {
+  position: absolute;
+  width: 30%;
+  height: 46%;
+  left: 68%;
+  background: url('images/dj snake.jpg');
+  background-size: cover;
+}
+
+.nameTrack {
+  font-size: 27px;
+  top: 22%;
+}
+
+.ONEMORETIME {
+  font-size: 23px;
+  width: 28%;
+  left: 37%;
+}
+
+.TITANIUM {
+  position: absolute;
+  width: 20%;
+  left: 8%;
+}
+
+.LEANON {
+  position: absolute;
+  width: 18%;
+  left: 74%;
+}
+
+.artists {
+  font-size: 24px;
+  top: 23%;
+}
+
+.DJSNAKE {
+  position: absolute;
+  width: 20%;
+  left: 73%;
+}
+
+.DAFTPUNK {
+  position: absolute;
+  width: 21%;
+  left: 41%;
+}
+
+.DAVIDGUETTA {
+  position: absolute;
+  width: 26%;
+  left: 5%;
+}
+
+.trackDescriptions {
+  position: absolute;
+  font-size: 35px;
+  top: 25%;
+}
+
+.DescriptionsSongs {
+  position: absolute;
+  width: 62%;
+  height: 97%;
+  top: 4%;
+  left: 20%;
+}
+
+.well {
+  font-size: 50px;
+  left: 36%;
+  top: 4%;
+}
+
+.boxBasic {
+  height: 27%;
+  top: 11%;
+  left: 24%;
+  width: 51%;
+}
+
+.pro {
+  height: 27%;
+  top: 41%;
+  left: 24%;
+  width: 51%;
+}
+
+.Pro_Xl {
+  height: 27%;
+  top: 71%;
+  left: 24%;
+  width: 51%;
+}
+
+.Controllers {
+  height: 27%;
+  top: 11%;
+  left: 24%;
+  width: 51%;
+}
+
+.Sound_Сards {
+    height: 27%;
+  top: 71%;
+  left: 24%;
+  width: 51%;
+}
+
+.mixers {
+  height: 27%;
+  top: 41%;
+  left: 24%;
+  width: 51%;
+}
+
+.hoodie {
+    height: 27%;
+  top: 11%;
+  left: 24%;
+  width: 51%;
+}
+
+.T-shirts {
+    height: 27%;
+  top: 71%;
+  left: 24%;
+  width: 51%;
+}
+
+.accessories {
+  height: 27%;
+  top: 41%;
+  left: 24%;
+  width: 51%;
+}
+
+.Const_Name {
+  font-size: 33px;
+  width: 75%;
+  left: 13%;
+}
+
+.Сonst_Moredetails {
+  font-size: 22px;
+}
+
+.Const_Text_Well {
+  font-size: 21px;
+}
+
+.EQUIPMENT1 {
+  font-size: 30px;
+}
+
+.Merch_h {
+  font-size: 53px;
+  top: 2%;
+  left: 37%;
+}
+
+.DJ_PLESH {
+  font-size: 25px;
+  top: 32%;
+  left: 4%;
+  height: 62%;
+  width: 24%;
+  line-height: 69px;
+}
+
+.support {
+  position: absolute;
+  width: 34%;
+  height: 16%;
+  left: 33%;
+  top: 28%;
+}
+
+.Information_about_us {
+  position: absolute;
+  width: 34%;
+  height: 24%;
+  left: 33%;
+  top: 73%;
+}
+
+.Rectangle25 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  border: 3px solid #FFFFFF;
+}
+
+.line_2_Information {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  left: 0%;
+  top: 25%;
+  border: 2px solid #FFFFFF;
+}
+
+.partner {
+  position: absolute;
+  width: 34%;
+  height: 20%;
+  left: 33%;
+  top: 47%;
+}
+
+.Const_Rectangle_bottom {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #FFFFFF;
+}
+
+.Const_Line_Bottom {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  left: 0%;
+  top: 25%;
+  border: 2px solid #FFFFFF;
+}
+
+.Const_Name_Bottom {
+  font-size: 16px;
+}
+
+.Text_support {
+  font-size: 13px;
+  width: 100%;
+  left: 0%;
+}
+
+.Text_partner {
+  font-size: 14px;
+  width: 100%;
+  left: 0%;
+}
+
+.Text_Information {
+  font-size: 14px;
+  width: 100%;
+  left: 0%;
+}
+
+.Rectangle39 {
+  width: 42%;
+  height: 33%;
+  left: 28%;
+  top: 15%;
+}
+
+.Rectangle40 {
+  width: 45%;
+  height: 36%;
+  left: 26%;
+  top: 10%;
+}
+
+.Rectangle41 {
+  width: 45%;
+  height: 36%;
+  left: 27%;
+  top: 10%;
+}
+
+.equipment1_jpg {
+  width: 81%;
+  height: 48%;
+  left: 10%;
+  top: 8%;
+}
+
+.equipment2_jpg {
+  width: 78%;
+  height: 47%;
+  left: 10%;
+  top: 17%;
+}
+
+.Mixers_jpg {
+  width: 84%;
+  height: 39%;
+  left: 8%;
+  top: 18%;
+}
+
+.Hoodi_jpg {
+  position: absolute;
+  width: 56%;
+  height: 55%;
+  left: 22%;
+  top: 10%;
+}
+
+.T-shirts_jpg {
+  position: absolute;
+  width: 81%;
+  height: 60%;
+  left: 9%;
+  top: 2%;
+}
+
+.accessories_jpg {
+  position: absolute;
+  width: 95%;
+  height: 47%;
+  left: 2%;
+  top: 12%;
+}
+
+.Application_icons {
+  position: absolute;
+  width: 19%;
+  height: 57%;
+  left: 75%;
+  top: 36%;
+}
+
+.Icon_Inst {
+  left: 14%;
+  top: 0px;
+  width: 65%;
+  height: 24%;
+}
+
+.Icone_Tel {
+  left: 20%;
+  top: 75%;
+  bottom: 0%;
+  width: 60%;
+  height: 23%;
+}
+
+.Icon_YT {
+  left: 16%;
+  top: 24%;
+  width: 63%;
+  height: 25%;
+}
+
+.Icon_VK {
+  left: 18%;
+  top: 50%;
+  width: 59%;
+  height: 22%;
+}
+
+}
